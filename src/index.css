@@ -15,3 +15,38 @@
   margin-top: 5vh;
   min-height: 90vh;
 }
+
+.home-title{
+  color: #65350f;
+  font-family: 'MedievalSharp', cursive;
+  margin-top: 35vh;
+  text-align: center;
+}
+
+.button {
+  background-image: url('images/tile.jpg');
+  background-size: cover;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 2px;
+  bottom: 15vh;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  position: absolute;
+  margin: 5px;
+  right: 10vw;
+  text-decoration: none;
+}
+
+.button:active{
+  transform: scale(0.95);
+}
+
+.button:focus{
+  outline: none;
+}

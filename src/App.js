@@ -1,10 +1,11 @@
 import Background from "./components/Background";
+import Page from "./components/Page";
 
 function App() {
   return (
     <div>
       <Background />
-      <p>Hello World</p>
+      <Page />
     </div>
   );
 }

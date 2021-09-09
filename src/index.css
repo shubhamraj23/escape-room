@@ -8,21 +8,6 @@
   width: 100vw;
 }
 
-.display{
-  background-image: url('images/parchment-paper.png');
-  background-size: 100% 100%;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-  min-height: 90vh;
-}
-
-.home-title{
-  color: #65350f;
-  font-family: 'MedievalSharp', cursive;
-  margin-top: 35vh;
-  text-align: center;
-}
-
 .button {
   background-image: url('images/tile.jpg');
   background-size: cover;
@@ -49,4 +34,31 @@
 
 .button:focus{
   outline: none;
+}
+
+.display{
+  background-image: url('images/parchment-paper.png');
+  background-size: 100% 100%;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  min-height: 90vh;
+}
+
+.home-title{
+  color: #65350f;
+  font-family: 'MedievalSharp', cursive;
+  margin-top: 35vh;
+  text-align: center;
+}
+
+.mute{
+  bottom: 5vh;
+  color: white;
+  cursor: pointer;
+  left: 1vw;
+  position: fixed;
+}
+
+.remove{
+  display: none;
 }

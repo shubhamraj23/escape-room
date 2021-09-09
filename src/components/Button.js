@@ -1,26 +1,28 @@
 import {useState} from "react"
+import {buttonContent} from '../content'
 
 const Button = ({updateApp, updatePage}) => {
   const [pageTitle, updateButton] = useState("home-page")
   const verifyResults = () => {
     var page = pageTitle
-    if (page == "home-page"){
+    if (page === "home-page"){
       page = "welcome"
+    }
+    else if (page === "welcome"){
+      page = "third-page"
+    }
+    else if (page === "third-page"){
+      page = "fourth-page"
     }
     updateApp(page)
     updatePage(page)
     updateButton(page)
   }
 
-  const data = {
-    "home-page": "clicks",
-    "welcome": "no-clicks"
-  }
-
   return (
     <div>
       <button className="button" onClick={verifyResults}>
-        {data[pageTitle]}
+        {buttonContent[pageTitle]}
       </button>
     </div>
   )

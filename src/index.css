@@ -4,6 +4,17 @@ h1, h2 {
   text-align: center;
 }
 
+input{
+  align-self: center;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 2px;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 90%;
+}
+
 li, p{
   color: #65350f;
   font-family: 'MedievalSharp', cursive;
@@ -29,17 +40,14 @@ ul{
 }
 
 .button {
+  align-self: center;
   background-image: url('images/tile.jpg');
   background-size: cover;
   border-color: black;
   border-radius: 5px;
   border-width: 2px;
-  bottom: 15vh;
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
-  position: absolute;
-  margin: 5px;
-  right: 10vw;
   text-decoration: none;
 }
 
@@ -62,6 +70,7 @@ ul{
 .display{
   /* background-image: url('images/parchment-paper.png'); */
   background-size: 100% 100%;
+  padding-bottom: 5vh;
   margin-bottom: 5vh;
   margin-top: 5vh;
   min-height: 90vh;
@@ -79,6 +88,11 @@ ul{
 
 .home-title{
   margin-top: 35vh;
+}
+
+.input-separator{
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 
 .last-content{
@@ -103,8 +117,10 @@ ul{
   transition: opacity 2s linear;
 }
 
+.small{
+  font-weight: bold;
+}
+
 #home-button{
-  align-self: center;
-  display: block;
-  width: 60%;
+  margin-top: 15vh;
 }

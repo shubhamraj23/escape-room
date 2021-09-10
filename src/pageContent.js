@@ -18,7 +18,7 @@ const pageContent = {
   "welcome": [
     {
       "tag": "p",
-      "class": `first-content last-content ${textSize}`,
+      "class": `first-content ${textSize}`,
       "id": "",
       "text": 
         `Welcome to the Escape Room. You are about to enter the lost city of Alexandra, a hypothetical, abandoned city
@@ -49,7 +49,8 @@ const pageContent = {
           `Please ensure that you have sufficient time to finish this game in one seating`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
           `The instructions panel is present on the top-right section of your screen.`,
-          `For doors that are two-way, the back button on the top-left section of the screen will be activated.`,
+          `The back button on the top-left section of the screen will appear in some room to allow mavigation
+          back to the previous room.`,
           `Use the mute button on the bottom left of the screen to mute/unmute the music.`,
           `For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.`
         ]
@@ -58,7 +59,7 @@ const pageContent = {
 
     {
       "tag": "p",
-      "class": `last-content ${textSize}`,
+      "class": `${textSize}`,
       "id": "",
       "text": "Please enter your name and click on the button below to proceed."
     },    

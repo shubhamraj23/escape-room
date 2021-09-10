@@ -1,4 +1,5 @@
 import {useState} from "react"
+
 import {buttonContent} from '../buttonContent'
 import {correctAnswer} from "../pageTraversal"
 
@@ -10,7 +11,6 @@ const Button = ({updateApp, updatePage}) => {
   const [cursor, changeCursor] = useState("pointer")
 
   const startPages = ["home-page", "welcome", "scenario", "the-adventure-begins"]
-  const ButtonId = (pageTitle === "home-page" ? "home-button" : "")
 
   const navigatePage = () => {
     if (startPages.includes(pageTitle)){
@@ -48,7 +48,8 @@ const Button = ({updateApp, updatePage}) => {
 
   return (
     <div>
-      <button className={`button ${buttonVisible}`} id={ButtonId}
+      <button className={`button ${buttonVisible} mx-auto`}
+        id={(pageTitle==="home-page" ? "home-button" : "")}
         style={{
           "cursor": {cursor},
         }}

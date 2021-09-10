@@ -1,5 +1,6 @@
 import {useState} from "react"
-import {buttonContent} from '../content'
+import {buttonContent} from '../buttonContent'
+import {correctAnswer} from "../pageTraversal"
 
 const Button = ({updateApp, updatePage}) => {
   const [pageTitle, updateButton] = useState("home-page")
@@ -8,21 +9,20 @@ const Button = ({updateApp, updatePage}) => {
   const [disabled, changeClick] = useState(false)
   const [cursor, changeCursor] = useState("pointer")
 
-  const verifyResults = () => {
-    changePage()
+  const startPages = ["home-page", "welcome", "scenario", "the-adventure-begins"]
+  const ButtonId = (pageTitle === "home-page" ? "home-button" : "")
+
+  const navigatePage = () => {
+    if (startPages.includes(pageTitle)){
+      changeCorrectPage()
+      return
+    } 
+
+    //Verify results and send to either changeCorrectPage or changeIncorrectPage or alertWrongAnswer
   }
 
-  const changePage = () => {
-    var page = pageTitle
-    if (page === "home-page"){
-      page = "welcome"
-    }
-    else if (page === "welcome"){
-      page = "third-page"
-    }
-    else if (page === "third-page"){
-      page = "fourth-page"
-    }
+  const changeCorrectPage = () => {
+    const page = correctAnswer[pageTitle]
     updateApp(page)
     updatePage(page)
     changeButton(page)
@@ -48,12 +48,12 @@ const Button = ({updateApp, updatePage}) => {
 
   return (
     <div>
-      <button className={`button ${buttonVisible}`} 
+      <button className={`button ${buttonVisible}`} id={ButtonId}
         style={{
           "cursor": {cursor},
         }}
         disabled={disabled}
-        onClick={verifyResults}
+        onClick={navigatePage}
       >
         <h1 className={`button-text ${textVisible}`}>
           {buttonContent[pageTitle]}

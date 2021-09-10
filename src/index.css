@@ -1,3 +1,23 @@
+h1, h2 {
+  color: #65350f;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+}
+
+li, p{
+  color: #65350f;
+  font-family: 'MedievalSharp', cursive;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+ul{
+  list-style-position: outside;
+  margin: 0;
+  padding: 5%;
+}
+
 .background-image{
   background-size: cover;
   height: 100vh;
@@ -40,11 +60,15 @@
 }
 
 .display{
-  background-image: url('images/parchment-paper.png');
+  /* background-image: url('images/parchment-paper.png'); */
   background-size: 100% 100%;
   margin-bottom: 5vh;
   margin-top: 5vh;
   min-height: 90vh;
+}
+
+.first-content{
+  margin-top: 20vh;
 }
 
 .hide{
@@ -54,10 +78,11 @@
 }
 
 .home-title{
-  color: #65350f;
-  font-family: 'MedievalSharp', cursive;
   margin-top: 35vh;
-  text-align: center;
+}
+
+.last-content{
+  margin-bottom: 30vh;
 }
 
 .mute{
@@ -76,4 +101,10 @@
   visibility: visible;
   opacity: 1;
   transition: opacity 2s linear;
+}
+
+#home-button{
+  align-self: center;
+  display: block;
+  width: 60%;
 }

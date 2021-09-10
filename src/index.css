@@ -15,17 +15,20 @@
   border-radius: 5px;
   border-width: 2px;
   bottom: 15vh;
-  color: white;
-  cursor: pointer;
   display: inline-block;
-  font-family: 'MedievalSharp', cursive;
-  font-size: 20px;
-  font-weight: bold;
   padding: 10px 20px;
   position: absolute;
   margin: 5px;
   right: 10vw;
   text-decoration: none;
+}
+
+.button-text{
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .button:active{
@@ -42,6 +45,12 @@
   margin-bottom: 5vh;
   margin-top: 5vh;
   min-height: 90vh;
+}
+
+.hide{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
 }
 
 .home-title{
@@ -61,4 +70,10 @@
 
 .remove{
   display: none;
+}
+
+.show{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
 }

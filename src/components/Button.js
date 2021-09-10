@@ -3,7 +3,16 @@ import {buttonContent} from '../content'
 
 const Button = ({updateApp, updatePage}) => {
   const [pageTitle, updateButton] = useState("home-page")
+  const [buttonVisible, buttonVisibility] = useState("")
+  const [textVisible, textVisibility] = useState("")
+  const [disabled, changeClick] = useState(false)
+  const [cursor, changeCursor] = useState("pointer")
+
   const verifyResults = () => {
+    changePage()
+  }
+
+  const changePage = () => {
     var page = pageTitle
     if (page === "home-page"){
       page = "welcome"
@@ -16,13 +25,39 @@ const Button = ({updateApp, updatePage}) => {
     }
     updateApp(page)
     updatePage(page)
-    updateButton(page)
+    changeButton(page)
+  }
+
+  const changeButton = (page) => {
+    buttonVisibility("hide")
+    textVisibility("hide")
+    changeClick(true)
+    changeCursor("auto")
+    setTimeout(() => {
+      updateButton(page)
+      buttonVisibility("show")
+    }, 2500)
+    setTimeout(() => {
+      textVisibility("show")
+    }, 4500)
+    setTimeout(() => {
+      changeClick(false)
+      changeCursor("pointer")
+    }, 6500)
   }
 
   return (
     <div>
-      <button className="button" onClick={verifyResults}>
-        {buttonContent[pageTitle]}
+      <button className={`button ${buttonVisible}`} 
+        style={{
+          "cursor": {cursor},
+        }}
+        disabled={disabled}
+        onClick={verifyResults}
+      >
+        <h1 className={`button-text ${textVisible}`}>
+          {buttonContent[pageTitle]}
+        </h1>
       </button>
     </div>
   )

@@ -12,8 +12,8 @@ const pageContent = {
   },
 
   "welcome": {
-    "h1-class": "remove",
-    "h1-content": "The Lost City of Alexandra"
+    "h1-class": "home-title",
+    "h1-content": "Meri Billi Mujhse Meow"
   },
 
   "third-page": {

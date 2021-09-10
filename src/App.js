@@ -15,7 +15,7 @@ function App() {
     <div>
       <Background page={pageTitle} soundState={sound} />
       <Page updateApp={updateApp}/>
-      <MuteButton changeSound={changeSound}/>
+      {pageTitle !== "home-page"? <MuteButton changeSound={changeSound}/> : ""}
     </div>
   );
 }

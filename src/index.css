@@ -119,6 +119,22 @@ ul{
   display: none;
 }
 
+.riddle{
+  background-color: #ffff88;
+  border-color: black;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 15px;
+  z-index: 1;
+}
+
+.riddle-text{
+  color: black;
+  font-style: italic;
+  text-align: center;
+}
+
 .show{
   visibility: visible;
   opacity: 1;
@@ -130,9 +146,14 @@ ul{
 }
 
 #error{
-  color: #a91b0d
+  color: #a91b0d;
+  margin-bottom: 0;
 }
 
 #home-button{
   margin-top: 15vh;
+}
+
+#remove-bottom{
+  margin-bottom: 0;
 }

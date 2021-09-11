@@ -2,7 +2,7 @@ import {useState} from "react"
 
 import {buttonContent} from '../buttonContent'
 import {correctAnswer} from "../pageTraversal"
-import {verifyResults, team} from "../verifyResults"
+import {verifyResults} from "../verifyResults"
 
 const Button = ({textInput, updateApp, updatePage, updateError}) => {
   const [pageTitle, updateButton] = useState("home-page")

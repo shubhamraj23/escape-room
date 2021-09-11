@@ -19,8 +19,8 @@ const Page = ({updateApp}) => {
   const [userInput, changeUserInput] = useState("")
   const [error, updateError] = useState("remove")
 
-  const rollPages = ["home-page", "welcome"]
-  const noInput = ["home-page", "welcome"]
+  const rollPages = ["home-page"]
+  const noInput = ["home-page", "welcome", "scenario", "the-adventure-begins"]
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -76,12 +76,12 @@ const Page = ({updateApp}) => {
         } 
       }>
       <div className="row">
-        <div className={`col-10 col-md-8 mx-auto ${textVisible}`}>
+        <div className={`col-11 col-md-10 mx-auto ${textVisible}`}>
           {divContent}
         </div>
       </div>
       <div className="row input-separator">
-        <div className="col-10 col-md-8 mx-auto">
+        <div className="col-11 col-md-10 mx-auto">
           <div className="row">
             <div className={`col-6 ${inputBox} p-0`}>
               <Input page={pageTitle} changeUserInput={changeUserInput}/>

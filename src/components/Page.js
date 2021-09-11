@@ -1,9 +1,10 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 import Button from "./Button"
 import Input from "./Input"
 
 import {pageContent} from '../pageContent'
+import {errorMessage} from "../buttonContent"
 import {parser} from '../parser'
 import roll from '../images/parchment-paper.png'
 import paper from '../images/parchment-paper.jpg'
@@ -14,11 +15,24 @@ const Page = ({updateApp}) => {
   const [textVisible, textVisibility] = useState("")
   const [background, updateBackground] = useState(roll)
   const [inputBox, changeBox] = useState("remove")
-  const [divWidth, changeWidth] = useState(12)
+  const [divWidth, changeWidth] = useState("12")
+  const [userInput, changeUserInput] = useState("")
+  const [error, updateError] = useState("remove")
 
-  // List where next page has rollpage / no input
-  const rollPages = ["home-page"]
-  const noInput = ["home-page"]
+  const rollPages = ["home-page", "welcome"]
+  const noInput = ["home-page", "welcome"]
+
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  let textSize = ''
+  if(height > width){
+    textSize = "small"
+  }
+
+  useEffect(() => {
+    changeBackground()
+    changeInput()
+  }, [pageTitle]); 
 
   const changeBackground = () => {
     if (rollPages.includes(pageTitle)){
@@ -27,7 +41,6 @@ const Page = ({updateApp}) => {
     else{
       updateBackground(paper)
     }
-    console.log(background)
   }
 
   const changeInput = () => {
@@ -45,8 +58,6 @@ const Page = ({updateApp}) => {
     bgVisibility("hide")
     textVisibility("hide")
     setTimeout(() => {
-      changeBackground()
-      changeInput()
       update(page)
       bgVisibility("show")
     }, 2500)
@@ -73,10 +84,18 @@ const Page = ({updateApp}) => {
         <div className="col-10 col-md-8 mx-auto">
           <div className="row">
             <div className={`col-6 ${inputBox} p-0`}>
-              <Input />
+              <Input page={pageTitle} changeUserInput={changeUserInput}/>
             </div>
             <div className={`col-${divWidth} p-0`}>
-              <Button updateApp={updateApp} updatePage={updatePage}/>
+              <Button 
+                textInput={userInput}
+                updateApp={updateApp} updatePage={updatePage} updateError={updateError}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className={`col-12 ${error} ${textSize} px-2`}>
+              <p id="error">{errorMessage[pageTitle]}</p>
             </div>
           </div>
         </div>

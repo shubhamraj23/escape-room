@@ -6,4 +6,14 @@ const buttonContent = {
   "the-adventure-begins": "The Adventure Begins",
 }
 
+const inputContent = {
+  "instructions": "Name",
+}
+
+const errorMessage = {
+  "instructions": "Please enter your name"
+}
+
 export {buttonContent};
+export {inputContent};
+export {errorMessage};

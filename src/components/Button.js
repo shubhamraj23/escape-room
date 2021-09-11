@@ -2,10 +2,10 @@ import {useState} from "react"
 
 import {buttonContent} from '../buttonContent'
 import {correctAnswer} from "../pageTraversal"
+import {verifyResults, team} from "../verifyResults"
 
-const Button = ({updateApp, updatePage}) => {
+const Button = ({textInput, updateApp, updatePage, updateError}) => {
   const [pageTitle, updateButton] = useState("home-page")
-  const [buttonVisible, buttonVisibility] = useState("")
   const [textVisible, textVisibility] = useState("")
   const [disabled, changeClick] = useState(false)
   const [cursor, changeCursor] = useState("pointer")
@@ -16,9 +16,21 @@ const Button = ({updateApp, updatePage}) => {
     if (startPages.includes(pageTitle)){
       changeCorrectPage()
       return
-    } 
+    }
 
-    //Verify results and send to either changeCorrectPage or changeIncorrectPage or alertWrongAnswer
+    if(textInput===""){
+      updateError("")
+      return
+    }
+    else{
+      updateError("remove")
+    }
+
+    const response = verifyResults(pageTitle, textInput)
+
+    if(response === "correct"){
+      changeCorrectPage()
+    }
   }
 
   const changeCorrectPage = () => {
@@ -29,13 +41,11 @@ const Button = ({updateApp, updatePage}) => {
   }
 
   const changeButton = (page) => {
-    buttonVisibility("hide")
     textVisibility("hide")
     changeClick(true)
     changeCursor("auto")
     setTimeout(() => {
       updateButton(page)
-      buttonVisibility("show")
     }, 2500)
     setTimeout(() => {
       textVisibility("show")
@@ -48,7 +58,7 @@ const Button = ({updateApp, updatePage}) => {
 
   return (
     <div>
-      <button className={`button ${buttonVisible} mx-auto`}
+      <button className={`button mx-auto`}
         id={(pageTitle==="home-page" ? "home-button" : "")}
         style={{
           "cursor": {cursor},

@@ -6,13 +6,21 @@ h1, h2 {
 
 input{
   align-self: center;
+  background-color: #f5d871;
   border-color: black;
   border-radius: 5px;
   border-width: 2px;
   display: block;
+  font-family: 'MedievalSharp', cursive;
+  font-style: italic;
+  font-weight: bold;
   padding: 10px 20px;
   text-decoration: none;
   width: 90%;
+}
+
+input:focus{
+  background-color: white;
 }
 
 li, p{
@@ -119,6 +127,10 @@ ul{
 
 .small{
   font-weight: bold;
+}
+
+#error{
+  color: #a91b0d
 }
 
 #home-button{

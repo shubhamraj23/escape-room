@@ -96,7 +96,7 @@ const Page = ({updateApp, pageBackground}) => {
             </div>
 
             <div className="col-4 my-auto">
-              <Timer />
+              <Timer start={header} />
             </div>
 
             <div className="col-4 my-auto">

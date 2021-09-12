@@ -7,6 +7,7 @@ import Page from "./components/Page";
 function App() {
   const [pageTitle, update] = useState('home-page')
   const [sound, changeSound] = useState(true)
+  const [background, changeBackground] = useState('')
 
   const updateApp = (page) => {
     update(page)
@@ -14,8 +15,8 @@ function App() {
   
   return (
     <div>
-      <Background page={pageTitle} soundState={sound} />
-      <Page updateApp={updateApp}/>
+      <Background page={pageTitle} soundState={sound} changeBackground={changeBackground}/>
+      <Page updateApp={updateApp} pageBackground={background}/>
       {pageTitle !== "home-page"? <MuteButton changeSound={changeSound}/> : ""}
     </div>
   );

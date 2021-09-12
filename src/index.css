@@ -1,7 +1,15 @@
-h1, h2 {
+body::-webkit-scrollbar { 
+  display: none 
+}
+
+h1, h2, h3, h4, h5, h6{
   color: #65350f;
   font-family: 'MedievalSharp', cursive;
   text-align: center;
+}
+
+h5{
+  font-weight: bold;
 }
 
 input{
@@ -76,12 +84,12 @@ ul{
 }
 
 .display{
-  /* background-image: url('images/parchment-paper.png'); */
   background-size: 100% 100%;
   padding-bottom: 5vh;
+  margin-top: 9vh;
   margin-bottom: 5vh;
-  margin-top: 5vh;
-  min-height: 90vh;
+  min-height: 85vh;
+  overflow-y: auto;
 }
 
 .first-content{
@@ -145,6 +153,24 @@ ul{
   font-weight: bold;
 }
 
+.top-section{
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+#back, #instructions{
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+#back:hover, #instructions:hover{
+  color: #ffff88;
+}
+
 #error{
   color: #a91b0d;
   margin-bottom: 0;
@@ -156,4 +182,21 @@ ul{
 
 #remove-bottom{
   margin-bottom: 0;
+}
+
+#timer{
+  margin: 10px auto;
+  text-align: center;
+}
+
+#timer-content{
+  align-self: center;
+  border-color: brown;
+  border-radius: 10px;
+  border-style: solid;
+  color: red;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 0px;
+  padding: 5px;
 }

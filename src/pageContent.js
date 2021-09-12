@@ -48,9 +48,9 @@ const pageContent = {
         "text": [
           `Please ensure that you have sufficient time to finish this game in one seating`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
-          `The instructions panel is present on the top-right section of your screen.`,
-          `The back button on the top-left section of the screen will appear in some room to allow mavigation
-          back to the previous room.`,
+          `The instructions panel will be visible on the top-right section of your screen.`,
+          `The back button on the top-left section of the screen will allow navigation back to the previous 
+          room in some specific rooms.`,
           `Use the mute button on the bottom left of the screen to mute/unmute the music.`,
           `For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.`
         ]
@@ -151,6 +151,61 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Click on the button to turn on the lights.`
+    },
+
+  ],
+
+  "the-adventure-begins": [
+    {
+      "tag": "h2",
+      "class": `first-content`,
+      "id": "",
+      "text": "THE ADVENTURE BEGINS"
+    },
+    
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `As soon as you move the lever up, the lights turn on. But the front door through which you entered 
+        automatically closes and locks itself. Above the door, on a big digital screen, you find the following written:`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The adventure begins here. The bomb has been activated and will blast off in 90 minutes. If you are capable 
+          enough, move forward and exit this building before the timer runs out. Else, wait for your death. There is 
+          no looking back.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: What do we do now?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: There is no choice, but to move forward.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Click on the button to proceed.`
     },
 
   ],

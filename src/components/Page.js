@@ -23,6 +23,7 @@ const Page = ({updateApp, pageBackground}) => {
   const [error, updateError] = useState("remove")
   const [divContent, changeContent] = useState(parser(pageContent[pageTitle]))
   const [header, updateHeader] = useState("hide")
+  const [instructions, updateInstructions] = useState("hide")
 
   const rollPages = ["home-page"]
   const noInput = ["home-page", "welcome", "scenario", "the-adventure-begins"]
@@ -41,6 +42,18 @@ const Page = ({updateApp, pageBackground}) => {
     changeInput()
     changeContent(parser(pageContent[pageTitle]))
   }, [pageTitle]); 
+
+  useEffect(() => {
+    if (instructions === "show"){
+      bgVisibility("hide")
+      textVisibility("hide")
+    }
+    else{
+      bgVisibility("show")
+      textVisibility("show")
+    }
+    
+  }, [instructions])
 
   const changeBackground = () => {
     if (rollPages.includes(pageTitle)){
@@ -83,6 +96,10 @@ const Page = ({updateApp, pageBackground}) => {
     }, 4500)
   }
 
+  const toggleInstructions = (visibilty) => {
+    updateInstructions(visibilty)
+  }
+
   return (
     <div>
       <div className={`col-12 top-section ${header}`}
@@ -100,8 +117,28 @@ const Page = ({updateApp, pageBackground}) => {
             </div>
 
             <div className="col-4 my-auto">
-              <Instructions />
+              <Instructions toggleInstructions={toggleInstructions}/>
             </div>
+        </div>
+      </div>
+
+      <div className="col-11 col-md-9 col-lg-7 mx-auto">
+        <div className="row">
+          <div className={`col-11 col-md-10 mx-auto`}>
+            <div className={`instructions ${instructions}`}>
+              <h2 className="instructions-heading">INSTRUCTIONS</h2>
+              <ul className={textSize}>
+                <li>Please ensure that you have sufficient time to finish this game in one seating.</li>
+                <li>The timer is visible on the top middle section of your screen and will not pause.</li>
+                <li>The back button on the top-left section of the screen will allow navigation back to the previous 
+                    room in some specific rooms.</li>
+                <li>Do not press the back button of your browser at any point. Doing so will restart the game.</li>
+                <li>Use the mute button on the bottom left of the screen to mute/unmute the music.</li>
+                <li>For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.</li>
+              </ul>
+              <p className={`instructions-bottom ${textSize}`}>Click again on the instructions button to return to the game.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -111,9 +148,6 @@ const Page = ({updateApp, pageBackground}) => {
             backgroundImage: `url(${background})`,
           } 
         }>
-        <div className="row">
-          
-        </div>
 
         <div className="row">
           <div className={`col-11 col-md-10 mx-auto ${textVisible}`}>

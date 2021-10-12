@@ -46,7 +46,7 @@ const pageContent = {
         "class": "",
         "id": "",
         "text": [
-          `Please ensure that you have sufficient time to finish this game in one seating`,
+          `Please ensure that you have sufficient time to finish this game in one seating.`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
           `The instructions panel will be visible on the top-right section of your screen.`,
           `The back button on the top-left section of the screen will allow navigation back to the previous 
@@ -183,7 +183,7 @@ const pageContent = {
         "text": [
           `The adventure begins here. The bomb has been activated and will blast off in 90 minutes. If you are capable 
           enough, move forward and exit this building before the timer runs out. Else, wait for your death. There is 
-          no looking back.`
+          no turning back.`
         ]
       }
     },

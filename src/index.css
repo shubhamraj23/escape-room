@@ -111,6 +111,25 @@ ul{
   margin-top: 5vh;
 }
 
+.instructions{
+  background-color: #d3b18b;
+  left: 10vw;
+  padding-bottom: 3vh;
+  padding-left: 5vw;
+  position: fixed;
+  top: 15vh;
+  width: 80vw;
+  z-index: 2;
+}
+
+.instructions-bottom{
+  padding-right: 5vw;
+}
+
+.instructions-heading{
+  margin-top: 5vh;
+}
+
 .last-content{
   margin-bottom: 30vh;
 }
@@ -168,7 +187,7 @@ ul{
 }
 
 #back:hover, #instructions:hover{
-  color: #ffff88;
+  color: red;
 }
 
 #error{

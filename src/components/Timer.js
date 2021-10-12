@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react"
 
 const Timer = ({start}) => {
-  const [minutes, changeMinutes] = useState(90)
+  const [minutes, changeMinutes] = useState("90")
   const [seconds, changeSeconds] = useState("00")
   const [runningTime, changeTime] = useState(5400)
   
@@ -15,10 +15,20 @@ const Timer = ({start}) => {
     }
   }
 
+  const setMinutes = (time) => {
+    if (time<10){
+      const newTime = `0${time}`
+      changeMinutes(newTime)
+    }
+    else{
+      changeMinutes(time)
+    }
+  }
+
   if (start === "show"){
     setTimeout(() => {
       changeTime(runningTime-1)
-      changeMinutes(Math.floor(runningTime/60))
+      setMinutes(Math.floor(runningTime/60))
       setSeconds(runningTime%60)
     }, 1000)
   }

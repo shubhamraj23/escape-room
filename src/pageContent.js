@@ -51,6 +51,7 @@ const pageContent = {
           `The instructions panel will be visible on the top-right section of your screen.`,
           `The back button on the top-left section of the screen will allow navigation back to the previous 
           room in some specific rooms.`,
+          `Do not press the back button of your browser at any point. Doing so will restart the game.`,
           `Use the mute button on the bottom left of the screen to mute/unmute the music.`,
           `For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.`
         ]

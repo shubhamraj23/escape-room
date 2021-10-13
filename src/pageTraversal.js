@@ -5,4 +5,9 @@ const correctAnswer = {
     "scenario": "the-adventure-begins",
 }
 
+const backTraversal = {
+    
+}
+
 export {correctAnswer};
+export {backTraversal};

@@ -1,4 +1,4 @@
-const Back = () => {
+const Back = ({backStatus, informButton}) => {
   const width = window.innerWidth;
   const height = window.innerHeight;
   let textSize = ''
@@ -6,9 +6,13 @@ const Back = () => {
     textSize = "small"
   }
 
+  const changeStatus = () => {
+    informButton(true)
+  }
+
   return (
-    <div>
-      <h5 className={`${textSize}`} id="back">
+    <div onClick={changeStatus}>
+      <h5 className={`${textSize} ${backStatus}`} id="back">
         BACK
       </h5>
     </div>

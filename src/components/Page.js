@@ -7,13 +7,13 @@ import Back from "./Back"
 import Timer from "./Timer"
 
 import {pageContent} from '../pageContent'
-import {errorMessage} from "../buttonContent"
+import {errorMessage} from '../buttonContent'
 import {parser} from '../parser'
 import roll from '../images/parchment-paper.png'
 import paper from '../images/parchment-paper.jpg'
 
 const Page = ({updateApp, pageBackground}) => {
-  const [pageTitle, update] = useState('home-page')
+  const [pageTitle, update] = useState("home-page")
   const [bgVisible, bgVisibility] = useState("")
   const [textVisible, textVisibility] = useState("")
   const [background, updateBackground] = useState(roll)
@@ -24,10 +24,13 @@ const Page = ({updateApp, pageBackground}) => {
   const [divContent, changeContent] = useState(parser(pageContent[pageTitle]))
   const [header, updateHeader] = useState("hide")
   const [instructions, updateInstructions] = useState("hide")
+  const [backPage, updateBack] = useState("d-none")
+  const [backPress, informButton] = useState(false)
 
   const rollPages = ["home-page"]
   const noInput = ["home-page", "welcome", "scenario", "the-adventure-begins"]
   const noHeader = ["home-page", "welcome", "instructions", "scenario"]
+  const backButton = []
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -37,6 +40,7 @@ const Page = ({updateApp, pageBackground}) => {
   }
 
   useEffect(() => {
+    changeBack()
     changeBackground()
     changeHeader()
     changeInput()
@@ -52,7 +56,6 @@ const Page = ({updateApp, pageBackground}) => {
       bgVisibility("show")
       textVisibility("show")
     }
-    
   }, [instructions])
 
   const changeBackground = () => {
@@ -84,6 +87,15 @@ const Page = ({updateApp, pageBackground}) => {
     }
   }
 
+  const changeBack = () => {
+    if (backButton.includes(pageTitle)){
+      updateBack("d-block")
+    }
+    else{
+      updateBack("d-none")
+    }
+  }
+
   const updatePage = (page) => {
     bgVisibility("hide")
     textVisibility("hide")
@@ -109,7 +121,7 @@ const Page = ({updateApp, pageBackground}) => {
       >
         <div className="row my-auto">
           <div className="col-4 my-auto">
-              <Back />
+              <Back backStatus={backPage} informButton={informButton}/>
             </div>
 
             <div className="col-4 my-auto">
@@ -130,9 +142,9 @@ const Page = ({updateApp, pageBackground}) => {
               <ul className={textSize}>
                 <li>Please ensure that you have sufficient time to finish this game in one seating.</li>
                 <li>The timer is visible on the top middle section of your screen and will not pause.</li>
-                <li>The back button on the top-left section of the screen will allow navigation back to the previous 
-                    room in some specific rooms.</li>
-                <li>Do not press the back button of your browser at any point. Doing so will restart the game.</li>
+                <li>The back button will be visible on the top-left section of the screen on some rooms to allow navigation
+                    back to the previous room.</li>
+                <li>Do not press the back button of your browser at any point. Doing so will end the game.</li>
                 <li>Use the mute button on the bottom left of the screen to mute/unmute the music.</li>
                 <li>For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.</li>
               </ul>
@@ -166,6 +178,7 @@ const Page = ({updateApp, pageBackground}) => {
                 <Button 
                   textInput={userInput}
                   updateApp={updateApp} updatePage={updatePage} updateError={updateError}
+                  backStatus={backPress} informButton={informButton}
                 />
               </div>
             </div>

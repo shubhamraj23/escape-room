@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 
 const Instructions = ({toggleInstructions}) => {
   const [visibilty, changeVisibility] = useState("hide")
+  const [textColor, changeColor] = useState("white")
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -21,11 +22,21 @@ const Instructions = ({toggleInstructions}) => {
 
   useEffect(() => {
     toggleInstructions(visibilty)
+    if (visibilty === "show"){
+      changeColor("red")
+    }
+    else{
+      changeColor("white")
+    }
   }, [visibilty])
 
   return (
     <div onClick={updateInstructions}>
-      <h5 className={`${textSize}`} id="instructions">
+      <h5 className={`${textSize}`} id="instructions"
+        style={{
+          color: `${textColor}`,
+        }}
+      >
         INSTRUCTIONS
       </h5>
     </div>

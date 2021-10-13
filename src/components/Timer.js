@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react"
+import {useState} from "react"
 
 const Timer = ({start}) => {
   const [minutes, changeMinutes] = useState("90")

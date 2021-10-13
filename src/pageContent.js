@@ -49,9 +49,9 @@ const pageContent = {
           `Please ensure that you have sufficient time to finish this game in one seating.`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
           `The instructions panel will be visible on the top-right section of your screen.`,
-          `The back button on the top-left section of the screen will allow navigation back to the previous 
-          room in some specific rooms.`,
-          `Do not press the back button of your browser at any point. Doing so will restart the game.`,
+          `The back button will be visible on the top-left section of the screen on some rooms to allow navigation
+          back to the previous room.`,
+          `Do not press the back button of your browser at any point. Doing so will end the game.`,
           `Use the mute button on the bottom left of the screen to mute/unmute the music.`,
           `For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.`
         ]

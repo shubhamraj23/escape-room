@@ -1,16 +1,24 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
-import {buttonContent} from '../buttonContent'
+import {buttonContent} from "../buttonContent"
 import {correctAnswer} from "../pageTraversal"
+import {backTraversal} from "../pageTraversal"
 import {verifyResults} from "../verifyResults"
 
-const Button = ({textInput, updateApp, updatePage, updateError}) => {
+const Button = ({textInput, updateApp, updatePage, updateError, backStatus, informButton}) => {
   const [pageTitle, updateButton] = useState("home-page")
   const [textVisible, textVisibility] = useState("")
   const [disabled, changeClick] = useState(false)
   const [cursor, changeCursor] = useState("pointer")
 
   const startPages = ["home-page", "welcome", "scenario", "the-adventure-begins"]
+  
+  useEffect(() => {
+    if (backStatus === true){
+      informButton(false)
+      reversePage()
+    }
+  }, [backStatus])
 
   const navigatePage = () => {
     if (startPages.includes(pageTitle)){
@@ -35,6 +43,13 @@ const Button = ({textInput, updateApp, updatePage, updateError}) => {
 
   const changeCorrectPage = () => {
     const page = correctAnswer[pageTitle]
+    updateApp(page)
+    updatePage(page)
+    changeButton(page)
+  }
+
+  const reversePage = () => {
+    const page = backTraversal[pageTitle]
     updateApp(page)
     updatePage(page)
     changeButton(page)

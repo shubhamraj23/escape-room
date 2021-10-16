@@ -52,8 +52,7 @@ const pageContent = {
           `The back button will be visible on the top-left section of the screen on some rooms to allow navigation
           back to the previous room.`,
           `Do not press the back button of your browser at any point. Doing so will end the game.`,
-          `Use the mute button on the bottom left of the screen to mute/unmute the music.`,
-          `For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.`
+          `Use the sound button on the bottom left of the screen to mute/unmute the music.`
         ]
       }
     },

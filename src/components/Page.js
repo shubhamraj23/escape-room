@@ -145,8 +145,7 @@ const Page = ({updateApp, pageBackground}) => {
                 <li>The back button will be visible on the top-left section of the screen on some rooms to allow navigation
                     back to the previous room.</li>
                 <li>Do not press the back button of your browser at any point. Doing so will end the game.</li>
-                <li>Use the mute button on the bottom left of the screen to mute/unmute the music.</li>
-                <li>For some puzzles, the incorrect answer will also open a door and lead you into a trap or loop.</li>
+                <li>Use the sound button on the bottom left of the screen to mute/unmute the music.</li>
               </ul>
               <p className={`instructions-bottom ${textSize}`}>Click again on the instructions button to return to the game.</p>
             </div>

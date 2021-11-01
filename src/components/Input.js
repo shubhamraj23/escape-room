@@ -9,6 +9,10 @@ const Input = ({page, changeUserInput}) => {
     changeUserInput(userInput)
   }, [userInput]); 
 
+  useEffect(() => {
+    document.getElementById("input-box").value = ""
+  }, [page])
+
   const updateInput = (e) => {
     setInput(e.target.value)
   }
@@ -16,7 +20,7 @@ const Input = ({page, changeUserInput}) => {
   return (
     <div>
       <input 
-        type="text" className="mx-auto px-2"
+        type="text" className="mx-auto px-2" id="input-box"
         placeholder={`${inputContent[page]}`}
         onInput={e => updateInput(e)}  
       >

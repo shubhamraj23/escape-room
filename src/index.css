@@ -12,6 +12,10 @@ h5{
   font-weight: bold;
 }
 
+img {
+  margin-bottom: 1em;
+}
+
 input{
   align-self: center;
   background-color: #f5d871;

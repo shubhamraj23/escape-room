@@ -1,3 +1,5 @@
+import {correctAnswers} from "./correctAnswers"
+
 const friends = ["Kaushik", "Ritik", "Vaibhav", "Divya", "Vibhuti", "Shubham", 
     "Namrata", "Arpita", "Shambhavi", "Vaidehi", "Jaya", "Satyam", "Anand", "Rajiv", 
     "Abhishek", "Samyak", "Shreya", "Somil", "Priya", "Smriti"]
@@ -27,6 +29,14 @@ const generateNames = (text) => {
 const verifyResults = (page, userInput) => {
   if (page==="instructions"){
     return generateNames(userInput)
+  }
+  else{
+    if(userInput === correctAnswers[page]){
+      return "correct"
+    }
+    else{
+      return "incorrect"
+    }
   }
 }
 

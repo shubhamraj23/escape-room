@@ -1,12 +1,11 @@
 import {useState, useEffect} from "react"
 
 import {buttonContent} from "../buttonContent"
-import {correctAnswer} from "../pageTraversal"
-import {backTraversal} from "../pageTraversal"
+import {correctAnswer, wrongAnswer, backTraversal} from "../pageTraversal"
 import {verifyResults} from "../verifyResults"
-import {startPages} from "../componentStatus"
+import {startPages, wrongSame} from "../componentStatus"
 
-const Button = ({textInput, updateApp, updatePage, updateError, backStatus, informButton}) => {
+const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton}) => {
   const [pageTitle, updateButton] = useState("home-page")
   const [textVisible, textVisibility] = useState("")
   const [disabled, changeClick] = useState(false)
@@ -26,22 +25,38 @@ const Button = ({textInput, updateApp, updatePage, updateError, backStatus, info
     }
 
     if(textInput===""){
-      updateError("")
+      updateMissing("")
       return
     }
     else{
-      updateError("remove")
+      updateMissing("remove")
     }
 
     const response = verifyResults(pageTitle, textInput)
 
     if(response === "correct"){
       changeCorrectPage()
+      updateError("remove")
+    }
+    else{
+      if (wrongSame.includes(pageTitle)){
+        updateError("")
+      }
+      else{
+        changeWrongPage()
+      }
     }
   }
 
   const changeCorrectPage = () => {
     const page = correctAnswer[pageTitle]
+    updateApp(page)
+    updatePage(page)
+    changeButton(page)
+  }
+
+  const changeWrongPage = () => {
+    const page = wrongAnswer[pageTitle]
     updateApp(page)
     updatePage(page)
     changeButton(page)

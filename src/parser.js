@@ -88,6 +88,12 @@ const parser = (content) => {
           {bullets}
         </div>
     }
+    else if(pageContent["tag"] === "img"){
+      divContent = 
+        <div className={className} id={id}>
+          <img src={pageContent["file"]} className="img-fluid"></img>
+        </div>
+    }
 
     result.push(
       <div>

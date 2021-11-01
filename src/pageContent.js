@@ -62,7 +62,7 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": "Please enter your name and click on the button below to proceed."
-    },    
+    } 
 
   ],
 
@@ -131,7 +131,7 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `Courageous are you to enter the house of death.`,
+          `Courageous you are to enter the house of death.`,
           `But are you smart enough to exit it alive?`
         ]
       }
@@ -151,7 +151,7 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Click on the button to turn on the lights.`
-    },
+    }
 
   ],
 
@@ -206,9 +206,119 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Click on the button to proceed.`
-    },
+    }
 
   ],
+
+  "room-1": [
+    {
+      "tag": "h2",
+      "class": `first-content`,
+      "id": "",
+      "text": "Room 1"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You turn around to have a glance at the room. Opposite the front door through which you entered, you find 
+        another door which is also locked. You decide to examine that door yourself.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `@name: Everyone, please scan through the room and search for any clues. Look for anything that you think
+        is odd or can get us out of here. I will have a look at that door.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You move forward to examine the door and find that it has a digital lock. You immediately understand
+        that you need to enter the correct key to open the door and move out of this room. Just beside the door,
+        you find a piece of folded paper on the ground.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `I don't like all the colors of the rainbow.`,
+          `My favourite ones are red, blue, orange and yellow.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Hey @name, come here. There is something on the wall.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You go there and find a piece of paper stuck on the wall with something scribbled.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-8 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room1_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You remove the paper from the wall and find something written behind it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `A traditional 9x9 would have killed you.`,
+          `So, I challenge you a 4x4.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": 
+        `@name: We need to solve this riddle to proceed forward.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct key and click on the button to open the door.`
+    },
+
+  ]
 
 }
 

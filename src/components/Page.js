@@ -7,7 +7,7 @@ import Back from "./Back"
 import Timer from "./Timer"
 
 import {pageContent} from '../pageContent'
-import {errorMessage} from '../buttonContent'
+import {errorMessage, noMessage} from '../buttonContent'
 import {parser} from '../parser'
 import {rollPages, noInput, noHeader, backButton} from "../componentStatus"
 
@@ -22,6 +22,7 @@ const Page = ({updateApp, pageBackground}) => {
   const [inputBox, changeBox] = useState("remove")
   const [divWidth, changeWidth] = useState("12")
   const [userInput, changeUserInput] = useState("")
+  const [missing, updateMissing] = useState("remove")
   const [error, updateError] = useState("remove")
   const [divContent, changeContent] = useState(parser(pageContent[pageTitle]))
   const [header, updateHeader] = useState("hide")
@@ -173,13 +174,17 @@ const Page = ({updateApp, pageBackground}) => {
               <div className={`col-${divWidth} p-0`}>
                 <Button 
                   textInput={userInput}
-                  updateApp={updateApp} updatePage={updatePage} updateError={updateError}
+                  updateApp={updateApp} updatePage={updatePage}
+                  updateError={updateError} updateMissing={updateMissing}
                   backStatus={backPress} informButton={informButton}
                 />
               </div>
             </div>
             
             <div className="row">
+              <div className={`col-12 ${missing} ${textSize} px-2`}>
+                <p id="error">{noMessage[pageTitle]}</p>
+              </div>
               <div className={`col-12 ${error} ${textSize} px-2`}>
                 <p id="error">{errorMessage[pageTitle]}</p>
               </div>

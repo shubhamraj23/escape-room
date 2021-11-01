@@ -4,6 +4,7 @@ import {buttonContent} from "../buttonContent"
 import {correctAnswer} from "../pageTraversal"
 import {backTraversal} from "../pageTraversal"
 import {verifyResults} from "../verifyResults"
+import {startPages} from "../componentStatus"
 
 const Button = ({textInput, updateApp, updatePage, updateError, backStatus, informButton}) => {
   const [pageTitle, updateButton] = useState("home-page")
@@ -11,8 +12,6 @@ const Button = ({textInput, updateApp, updatePage, updateError, backStatus, info
   const [disabled, changeClick] = useState(false)
   const [cursor, changeCursor] = useState("pointer")
 
-  const startPages = ["home-page", "welcome", "scenario", "the-adventure-begins"]
-  
   useEffect(() => {
     if (backStatus === true){
       informButton(false)

@@ -9,5 +9,4 @@ const backTraversal = {
     
 }
 
-export {correctAnswer};
-export {backTraversal};
+export {correctAnswer, backTraversal};

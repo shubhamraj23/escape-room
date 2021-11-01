@@ -9,6 +9,8 @@ import Timer from "./Timer"
 import {pageContent} from '../pageContent'
 import {errorMessage} from '../buttonContent'
 import {parser} from '../parser'
+import {rollPages, noInput, noHeader, backButton} from "../componentStatus"
+
 import roll from '../images/parchment-paper.png'
 import paper from '../images/parchment-paper.jpg'
 
@@ -26,11 +28,6 @@ const Page = ({updateApp, pageBackground}) => {
   const [instructions, updateInstructions] = useState("hide")
   const [backPage, updateBack] = useState("d-none")
   const [backPress, informButton] = useState(false)
-
-  const rollPages = ["home-page"]
-  const noInput = ["home-page", "welcome", "scenario", "the-adventure-begins"]
-  const noHeader = ["home-page", "welcome", "instructions", "scenario"]
-  const backButton = []
 
   const width = window.innerWidth;
   const height = window.innerHeight;

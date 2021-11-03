@@ -26,6 +26,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
 
     if(textInput===""){
       updateMissing("")
+      updateError("remove")
       return
     }
     else{

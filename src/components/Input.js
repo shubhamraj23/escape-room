@@ -11,6 +11,7 @@ const Input = ({page, changeUserInput}) => {
 
   useEffect(() => {
     document.getElementById("input-box").value = ""
+    setInput("")
   }, [page])
 
   const updateInput = (e) => {

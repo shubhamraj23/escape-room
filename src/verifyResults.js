@@ -31,7 +31,7 @@ const verifyResults = (page, userInput) => {
     return generateNames(userInput)
   }
   else{
-    if(userInput === correctAnswers[page]){
+    if(userInput.toLowerCase() === correctAnswers[page]){
       return "correct"
     }
     else{

@@ -5,6 +5,7 @@ const correctAnswer = {
     "scenario": "the-adventure-begins",
     "the-adventure-begins": "room-1",
     "room-1": "room-2",
+    "room-2": "room-3",
 }
 
 const wrongAnswer = {

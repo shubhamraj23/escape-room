@@ -24,7 +24,7 @@ const pageContent = {
         `Welcome to the Escape Room. You are about to enter the lost city of Alexandra, a hypothetical, abandoned city
          of the ancient world. Once you enter the escape room, you will have to use your wits to search for clues and 
          solve the puzzles to move forward and get out of the escape room before the timer runs out. Please read the 
-         instructions carefully before you start. Once the game starts, you will find the instructions panel on 
+         instructions carefully before you start. Once the game begins, you will find the instructions panel on 
          the top right section of your screen which you can refer to at any point in time. However, the timer won’t 
          pause once the game starts. Click on the button below to read the instructions.`
     }
@@ -49,7 +49,7 @@ const pageContent = {
           `Please ensure that you have sufficient time to finish this game in one seating.`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
           `The instructions panel will be visible on the top-right section of your screen.`,
-          `The back button will be visible on the top-left section of the screen on some rooms to allow navigation
+          `The back button will be visible on the top-left section of the screen in some rooms to allow navigation
           back to the previous room.`,
           `Do not press the back button of your browser at any point. Doing so will end the game.`,
           `Use the sound button on the bottom left of the screen to mute/unmute the music.`
@@ -212,15 +212,8 @@ const pageContent = {
 
   "room-1": [
     {
-      "tag": "h2",
-      "class": `first-content`,
-      "id": "",
-      "text": "Room 1"
-    },
-
-    {
       "tag": "p",
-      "class": `${textSize}`,
+      "class": `${textSize} first-content`,
       "id": "",
       "text": 
         `You turn around to have a glance at the room. Opposite the front door through which you entered, you find 
@@ -297,8 +290,7 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `A traditional 9x9 would have killed you.`,
-          `So, I challenge you a 4x4.`
+          `You see the 9x9 version in a newspaper.`
         ]
       }
     },
@@ -306,7 +298,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": 
         `@name: We need to solve this riddle to proceed forward.`
     },
@@ -316,6 +308,83 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Enter the correct key and click on the button to open the door.`
+    },
+
+  ],
+
+  "room-2": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You are filled with joy as you were able to crack the code. You quickly hustle into the next
+        room, and the door behind you closes. The room is brightly lit and smaller than the previous room. You see
+        another similar door at the other end of the room. @friend3 moves towards the door and tries to open it`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: It is locked. This time it is alphabetic instead of numeric.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend2: Let's search the room for clues.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You look around the walls to search for clues. At one of the corners, you find a crumpled piece of paper. You
+        straigthen it and read.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `First think of the person who lives in disguise,`,
+          `Who deals in secrets and tells naught but lies.`,
+          `Next, tell me what’s always the last thing to mend,`,
+          `The middle of middle and end of the end?`,
+          `And finally give me the sound often heard,`,
+          `During the search for a hard-to-find word.`,
+          `Now string them together, and answer me this,`,
+          `Which creature would you be unwilling to kiss?`,
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: I don't think there are any clues in this room.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: I found one. And I think it is sufficient to get us through.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
     },
 
   ]

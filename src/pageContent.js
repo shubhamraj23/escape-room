@@ -327,7 +327,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@friend3: It is locked. This time it is alphabetic instead of numeric.`
+      "text": `@friend3: It is locked. This time the code is alphabetic instead of numeric.`
     },
 
     {
@@ -354,14 +354,14 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `First think of the person who lives in disguise,`,
-          `Who deals in secrets and tells naught but lies.`,
-          `Next, tell me what’s always the last thing to mend,`,
-          `The middle of middle and end of the end?`,
-          `And finally give me the sound often heard,`,
-          `During the search for a hard-to-find word.`,
-          `Now string them together, and answer me this,`,
-          `Which creature would you be unwilling to kiss?`,
+          `Tell me that part of hand game which is a huge stone,`,
+          `By a type of music, it is also known.`,
+          `Next tell me what's the end of this riddle?`,
+          `The beginning of the end and the end of middle.`,
+          `And finally give me that English letter,`,
+          `Found easily at tea-time, the tastier the better.`,
+          `Now answer me this by combining the things,`,
+          `What is it that flies but has no wings?`,
         ]
       }
     },

@@ -25,6 +25,21 @@ const preprocess = (text) => {
   if(text.includes("@randomFriend")){
     text = text.replace("@randomFriend", friends[randomIndex])
   }
+  if(text.includes("@wrongText")){
+    const incorrectAttempts = localStorage.getItem("wrongAttempts")
+    let correctText = ""
+    if (incorrectAttempts === "0"){
+      correctText = `You haven't made any incorrect attempts of opening the door so far. 
+      You were lucky to crack them in the first attempt.`
+    }
+    else if (incorrectAttempts === "1"){
+      correctText = "You have made 1 incorrect attempt of opening the door so far."
+    }
+    else {
+      correctText = `You have made ${incorrectAttempts} incorrect attempts of opening the door so far.`
+    }
+    text = text.replace("@wrongText", correctText)
+  }
 
   return text
 }

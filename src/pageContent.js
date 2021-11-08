@@ -395,9 +395,35 @@ const pageContent = {
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `The door opens. You are filled with joy as you were able to crack the code. You quickly hustle into the next
-        room, and the door behind you closes. The room is brightly lit and smaller than the previous room. You see
-        another similar door at the other end of the room. @friend3 moves towards the door and tries to open it`
+        `You erupt in joy as the door opens. But this time, there is a passage on the other side of the door.
+        You start walking through the passage. The passage is dark and dimly lit on the walls. After walking a
+        few steps, you see that the passage diverges into two. On the left wall, you find a big digital screen
+        flashing the following:`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `You have managed to pass two of my rooms. But how far will you go. @wrongText But from now, you won't
+          have the luxury of multiple attempts. Every passcode will open the door for you. A correct key will safely
+          lead you to the next room. But a wrong key can lead you into a trap and kill you. So, be careful before
+          you try opening the doors. For now, you have two passages in front of you. The left one is shorter, but
+          more difficult and deadly. The right one is easier, but the bomb may blast before you move out. The choice
+          is yours. It is only a matter of time before you die.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: Which way should we choose now?`
     }
 
   ]

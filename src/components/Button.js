@@ -41,6 +41,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
     }
     else{
       if (wrongSame.includes(pageTitle)){
+        localStorage.setItem("wrongAttempts", Number(localStorage.getItem("wrongAttempts")) + 1)
         updateError("")
       }
       else{

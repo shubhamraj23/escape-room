@@ -22,6 +22,7 @@ const generateNames = (text) => {
 
   localStorage.setItem("name", name)
   localStorage.setItem("friends", teammates.join())
+  localStorage.setItem("wrongAttempts", 0)
 
   return "correct"
 }

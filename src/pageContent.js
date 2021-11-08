@@ -174,10 +174,10 @@ const pageContent = {
 
     {
       "tag": "div",
-      "class": `riddle my-2 ${textSize}`,
+      "class": `screen my-2 ${textSize}`,
       "id": "",
       "text": {
-        "class": "riddle-text",
+        "class": "screen-text",
         "id": "remove-bottom",
         "text": [
           `The adventure begins here. The bomb has been activated and will blast off in 90 minutes. If you are capable 
@@ -248,7 +248,7 @@ const pageContent = {
         "id": "remove-bottom",
         "text": [
           `I don't like all the colors of the rainbow.`,
-          `My favourite ones are red, blue, orange and yellow.`
+          `My favourite ones are red, blue, orange, yellow.`
         ]
       }
     },
@@ -354,13 +354,13 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `Tell me that part of hand game which is a huge stone,`,
+          `Which part of a hand game is a huge stone?`,
           `By a type of music, it is also known.`,
           `Next tell me what's the end of this riddle?`,
           `The beginning of the end and the end of middle.`,
           `And finally give me that English letter,`,
           `Found easily at tea-time, the tastier the better.`,
-          `Now answer me this by combining the things,`,
+          `Now answer me this by combining the 3 things,`,
           `What is it that flies but has no wings?`,
         ]
       }
@@ -385,7 +385,20 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Enter the correct password and click on the button to open the door.`
-    },
+    }
+
+  ],
+
+  "room-3": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You are filled with joy as you were able to crack the code. You quickly hustle into the next
+        room, and the door behind you closes. The room is brightly lit and smaller than the previous room. You see
+        another similar door at the other end of the room. @friend3 moves towards the door and tries to open it`
+    }
 
   ]
 

@@ -1,11 +1,11 @@
 import {useState, useEffect} from "react"
 
 import {buttonContent} from "../buttonContent"
-import {correctAnswer, wrongAnswer, backTraversal} from "../pageTraversal"
+import {correctAnswer, wrongAnswer, backTraversal, leftButtonTraversal} from "../pageTraversal"
 import {verifyResults} from "../verifyResults"
-import {startPages, wrongSame} from "../componentStatus"
+import {startPages, wrongSame, choicePages} from "../componentStatus"
 
-const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton}) => {
+const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton, leftStatus, informLeftButton}) => {
   const [pageTitle, updateButton] = useState("home-page")
   const [textVisible, textVisibility] = useState("")
   const [disabled, changeClick] = useState(false)
@@ -18,8 +18,20 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
     }
   }, [backStatus])
 
+  useEffect(() => {
+    if (leftStatus === true){
+      informLeftButton(false)
+      leftPage()
+    }
+  }, [leftStatus])
+
   const navigatePage = () => {
     if (startPages.includes(pageTitle)){
+      changeCorrectPage()
+      return
+    }
+
+    if (choicePages.includes(pageTitle)){
       changeCorrectPage()
       return
     }
@@ -66,6 +78,13 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
 
   const reversePage = () => {
     const page = backTraversal[pageTitle]
+    updateApp(page)
+    updatePage(page)
+    changeButton(page)
+  }
+
+  const leftPage = () => {
+    const page = leftButtonTraversal[pageTitle]
     updateApp(page)
     updatePage(page)
     changeButton(page)

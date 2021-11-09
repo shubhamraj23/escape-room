@@ -6,6 +6,11 @@ const buttonContent = {
   "the-adventure-begins": "The Adventure Begins",
   "room-1": "Open",
   "room-2": "Open",
+  "room-3": "Choose the right route",
+}
+
+const leftButtonContent = {
+  "room-3": "Choose the left route",
 }
 
 const inputContent = {
@@ -25,4 +30,4 @@ const errorMessage = {
   "room-2": "Incorrect password. Please try again.",
 }
 
-export {buttonContent, inputContent, errorMessage, noMessage};
+export {buttonContent, leftButtonContent, inputContent, errorMessage, noMessage};

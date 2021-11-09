@@ -5,11 +5,12 @@ import Input from "./Input"
 import Instructions from "./Instructions"
 import Back from "./Back"
 import Timer from "./Timer"
+import LeftButton from "./LeftButton"
 
 import {pageContent} from '../pageContent'
 import {errorMessage, noMessage} from '../buttonContent'
 import {parser} from '../parser'
-import {rollPages, noInput, noHeader, backButton} from "../componentStatus"
+import {rollPages, noInput, noHeader, backButton, choicePages} from "../componentStatus"
 
 import roll from '../images/parchment-paper.png'
 import paper from '../images/parchment-paper.jpg'
@@ -29,6 +30,8 @@ const Page = ({updateApp, pageBackground}) => {
   const [instructions, updateInstructions] = useState("hide")
   const [backPage, updateBack] = useState("d-none")
   const [backPress, informButton] = useState(false)
+  const [leftButton, updateLeftButton] = useState("remove")
+  const [leftPress, informLeftButton] = useState(false)
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -77,10 +80,18 @@ const Page = ({updateApp, pageBackground}) => {
   const changeInput = () => {
     if (noInput.includes(pageTitle)){
       changeBox("remove")
-      changeWidth("12")
+      if (choicePages.includes(pageTitle)){
+        changeWidth("6")
+        updateLeftButton("")
+      }
+      else{
+        updateLeftButton("remove")
+        changeWidth("12")
+      }
     }
     else{
       changeBox("")
+      updateLeftButton("remove")
       changeWidth("6")
     }
   }
@@ -170,6 +181,10 @@ const Page = ({updateApp, pageBackground}) => {
               <div className={`col-6 ${inputBox} p-0`}>
                 <Input page={pageTitle} changeUserInput={changeUserInput}/>
               </div>
+
+              <div className={`col-6 ${leftButton} p-0`}>
+                <LeftButton page={pageTitle} informLeftButton={informLeftButton}/>
+              </div>
               
               <div className={`col-${divWidth} p-0`}>
                 <Button 
@@ -177,6 +192,7 @@ const Page = ({updateApp, pageBackground}) => {
                   updateApp={updateApp} updatePage={updatePage}
                   updateError={updateError} updateMissing={updateMissing}
                   backStatus={backPress} informButton={informButton}
+                  leftStatus={leftPress} informLeftButton={informLeftButton}
                 />
               </div>
             </div>

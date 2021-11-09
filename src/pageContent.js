@@ -412,9 +412,10 @@ const pageContent = {
           `You have managed to pass two of my rooms. But how far will you go. @wrongText But from now, you won't
           have the luxury of multiple attempts. Every passcode will open the door for you. A correct key will safely
           lead you to the next room. But a wrong key can lead you into a trap and kill you. So, be careful before
-          you try opening the doors. For now, you have two passages in front of you. The left one is shorter, but
-          more difficult and deadly. The right one is easier, but the bomb may blast before you move out. The choice
-          is yours. It is only a matter of time before you die.`
+          you try opening the doors. For now, you have two passages in front of you. Both of them can lead you out.
+          The left one is shorter, but so difficult and deadly that you may die on the way. The right one is easier,
+          but so long that the bomb may blast before you move out. The choice is yours. It is only a matter of time
+          before you die.`
         ]
       }
     },

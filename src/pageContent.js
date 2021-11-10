@@ -413,9 +413,9 @@ const pageContent = {
           have the luxury of multiple attempts. Every passcode will open the door for you. A correct key will safely
           lead you to the next room. But a wrong key can lead you into a trap and kill you. So, be careful before
           you try opening the doors. For now, you have two passages in front of you. Both of them can lead you out.
-          The left one is shorter, but so difficult and deadly that you may die on the way. The right one is easier,
-          but so long that the bomb may blast before you move out. The choice is yours. It is only a matter of time
-          before you die.`
+          The right one is easier, but so deadly that a single mistake can cost you your life. The left one is less
+          deadly, but so difficult and tricky that the bomb may blast before you move out. The choice is yours.
+          It is only a matter of time before you die.`
         ]
       }
     },
@@ -425,6 +425,83 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `@randomFriend: Which way should we choose now?`
+    }
+
+  ],
+
+  "room-4": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `Reluctantly, you follow the left path and enter into a room. As you enter the room, the door locks itself
+        again. You realise that your choice is now final and it cannot be reversed.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: Do you think we should have chosen the other way?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Our choice is final now. There is nothing we can do about it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Yes, @friend1 is right. We should focus all our attention on moving through this door now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You move forward to look at the door. As expected, it is locked. But, you find a something engraved on the
+        wall near the door.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `A 5 digit numeric code with distinct digits will open the door`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: Look here I found something.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-8 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room4_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: I think I figured out the answer.`
     }
 
   ]

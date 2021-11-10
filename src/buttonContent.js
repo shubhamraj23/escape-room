@@ -7,6 +7,7 @@ const buttonContent = {
   "room-1": "Open",
   "room-2": "Open",
   "room-3": "Choose the right route",
+  "room-4": "Open",
 }
 
 const leftButtonContent = {
@@ -17,12 +18,14 @@ const inputContent = {
   "instructions": "Name",
   "room-1": "Key",
   "room-2": "Password",
+  "room-4": "Code",
 }
 
 const noMessage = {
   "instructions": "Please enter your name",
   "room-1": "Please enter a key",
   "room-2": "Please enter a password",
+  "room-4": "Please enter a code",
 }
 
 const errorMessage = {

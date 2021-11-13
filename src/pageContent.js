@@ -477,7 +477,7 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `A 5 digit numeric code with distinct digits will open the door`
+          `A 5 digit numeric code with distinct digits will open the door.`
         ]
       }
     },
@@ -502,6 +502,83 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `@name: I think I figured out the answer.`
+    }
+
+  ],
+
+  "room-5": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into a passage. You aren't sure if you should be happy about it or not. You know
+        that this passage could lead you into a trap and kill you. After walking a few steps, you start to see a room
+        in front of you. There is a chance that you could be safe for now. You enter the room and the door closes behind
+        you.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Looks like we are safe for now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: Let's try to get out of this one quickly.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: I checked the door. It is locked and needs a password.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: Look here. I found the clue needed to open the door.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The image behind this paper contains the password to open this door.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You flip the paper and see the image.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-8 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room5_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: What is this supposed to mean?`
     }
 
   ]

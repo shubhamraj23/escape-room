@@ -22,11 +22,11 @@ const pageContent = {
       "id": "",
       "text": 
         `Welcome to the Escape Room. You are about to enter the lost city of Alexandra, a hypothetical, abandoned city
-         of the ancient world. Once you enter the escape room, you will have to use your wits to search for clues and 
+         of the ancient world. Once you enter the escape room, you will have to use your wits to figure out and 
          solve the puzzles to move forward and get out of the escape room before the timer runs out. Please read the 
-         instructions carefully before you start. Once the game begins, you will find the instructions panel on 
-         the top right section of your screen which you can refer to at any point in time. However, the timer won’t 
-         pause once the game starts. Click on the button below to read the instructions.`
+         instructions carefully before you start. Throughout the game, you can access the instructions panel located
+         at the top right corner of your screen. However, the timer won’t pause once the game starts. Click on the
+         button below to read the instructions.`
     }
   ],
 
@@ -48,8 +48,8 @@ const pageContent = {
         "text": [
           `Please ensure that you have sufficient time to finish this game in one seating.`,
           `The timer will be visible on the top middle section of your screen and will not pause.`,
-          `The instructions panel will be visible on the top-right section of your screen.`,
-          `The back button will be visible on the top-left section of the screen in some rooms to allow navigation
+          `The instructions panel will be visible on the top-right of your screen.`,
+          `The back button will be visible on the top-left of the screen in some rooms to allow navigation
           back to the previous room.`,
           `Do not press the back button of your browser at any point. Doing so will end the game.`,
           `Use the sound button on the bottom left of the screen to mute/unmute the music.`
@@ -79,8 +79,8 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": 
-        `Welcome to Alexandra, @name. You and your friends @friend1, @friend2, @friend3 and @friend4 are 
-        visiting a mysterious building in this ancient city. The building is supposed to be a haunted one and that 
+        `Welcome to Alexandra, @name. You and your friends @friend1, @friend2, @friend3 and @friend4; are 
+        visiting a mysterious building in this ancient city. The building is supposed to be a haunted one which 
         makes you very excited.`
     },
 
@@ -103,10 +103,9 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": 
-        `The five of you move inside through the door. You find yourselves in a small room that is dimly lit. Through 
-        the lights, you can see that the room is fairly empty, but has some pieces of paper stuck on different walls. 
-        You want to read what is written on them, but unfortunately, the light is too dim. So, you start looking around 
-        for switches to turn on the remaining lights.`
+        `The five of you move inside through the door. There is dim lighting in the small room. Through the lights,
+        you can see that it is relatively empty; but has some pieces of paper stuck on different walls. Despite your
+        best efforts, it is too dark to read. So, you start looking around for switches to turn on the remaining lights.`
     },
 
     {
@@ -120,7 +119,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `Below the lever, was engraved upon the wall.`
+      "text": `Below the lever was engraved upon the wall.`
     },
 
     {
@@ -169,7 +168,7 @@ const pageContent = {
       "id": "",
       "text": 
         `As soon as you move the lever up, the lights turn on. But the front door through which you entered 
-        automatically closes and locks itself. Above the door, on a big digital screen, you find the following written:`
+        automatically closes and locks itself. Above the door, on a large digital screen, you find the following written:`
     },
 
     {
@@ -198,7 +197,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@name: There is no choice, but to move forward.`
+      "text": `@name: There is no choice but to move forward.`
     },
 
     {
@@ -236,7 +235,7 @@ const pageContent = {
       "text": 
         `You move forward to examine the door and find that it has a digital lock. You immediately understand
         that you need to enter the correct key to open the door and move out of this room. Just beside the door,
-        you find a piece of folded paper on the ground.`
+        you find a piece of folded paper on the ground. You open it and read.`
     },
 
     {
@@ -247,7 +246,7 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
-          `I don't like all the colors of the rainbow.`,
+          `I don't like all the colours of the rainbow.`,
           `My favourite ones are red, blue, orange, yellow.`
         ]
       }
@@ -318,9 +317,9 @@ const pageContent = {
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `The door opens. You are filled with joy as you were able to crack the code. You quickly hustle into the next
+        `The door opens. Having cracked the code, you are full of joy. You quickly hustle into the next
         room, and the door behind you closes. The room is brightly lit and smaller than the previous room. You see
-        another similar door at the other end of the room. @friend3 moves towards the door and tries to open it`
+        another similar door at the other end of the room. @friend3 moves towards the door and tries to open it.`
     },
 
     {
@@ -343,7 +342,7 @@ const pageContent = {
       "id": "",
       "text": 
         `You look around the walls to search for clues. At one of the corners, you find a crumpled piece of paper. You
-        straigthen it and read.`
+        straighten it and read.`
     },
 
     {
@@ -356,11 +355,11 @@ const pageContent = {
         "text": [
           `Which part of a hand game is a huge stone?`,
           `By a type of music, it is also known.`,
-          `Next tell me what's the end of this riddle?`,
-          `The beginning of the end and the end of middle.`,
-          `And finally give me that English letter,`,
-          `Found easily at tea-time, the tastier the better.`,
-          `Now answer me this by combining the 3 things,`,
+          `Next, tell me what's the end of this riddle?`,
+          `The beginning of the end and the end of the middle.`,
+          `And finally, give me that English letter,`,
+          `Found easily at tea-time, the tastier, the better.`,
+          `Now answer me this by combining the three things,`,
           `What is it that flies but has no wings?`,
         ]
       }
@@ -396,9 +395,8 @@ const pageContent = {
       "id": "",
       "text": 
         `You erupt in joy as the door opens. But this time, there is a passage on the other side of the door.
-        You start walking through the passage. The passage is dark and dimly lit on the walls. After walking a
-        few steps, you see that the passage diverges into two. On the left wall, you find a big digital screen
-        flashing the following:`
+        You start walking through it. It is dark and dimly lit. After walking a few steps, you see that the passage
+        diverges into two. On the left wall, you find a large digital screen flashing the following:`
     },
 
     {
@@ -409,13 +407,12 @@ const pageContent = {
         "class": "screen-text",
         "id": "remove-bottom",
         "text": [
-          `You have managed to pass two of my rooms. But how far will you go. @wrongText But from now, you won't
-          have the luxury of multiple attempts. Every passcode will open the door for you. A correct key will safely
-          lead you to the next room. But a wrong key can lead you into a trap and kill you. So, be careful before
-          you try opening the doors. For now, you have two passages in front of you. Both of them can lead you out.
-          The right one is easier, but so deadly that a single mistake can cost you your life. The left one is less
-          deadly, but so difficult and tricky that the bomb may blast before you move out. The choice is yours.
-          It is only a matter of time before you die.`
+          `You have managed to pass two of my rooms. But how far will you go? @wrongText But from now, you won't be
+          able to try again. Every passcode will open the door for you. A correct key will safely lead you to the
+          next room. But a wrong key can lead you into a trap and kill you. So, be careful before you try opening
+          the doors. For now, you have two passages in front of you. Both of them can lead you out. The right one is
+          easier but so deadly that a single mistake can cost you your life. The left one is less deadly but challenging
+          and tricky enough for you not to finish it in time. The choice is yours. It is only a matter of time before you die.`
         ]
       }
     },

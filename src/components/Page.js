@@ -151,7 +151,7 @@ const Page = ({updateApp, pageBackground}) => {
               <ul className={textSize}>
                 <li>Please ensure that you have sufficient time to finish this game in one seating.</li>
                 <li>The timer is visible on the top middle section of your screen and will not pause.</li>
-                <li>The back button will be visible on the top-left section of the screen in some rooms to allow navigation
+                <li>The back button will be visible on the top-left of the screen in some rooms to allow navigation
                     back to the previous room.</li>
                 <li>Do not press the back button of your browser at any point. Doing so will end the game.</li>
                 <li>Use the sound button on the bottom left of the screen to mute/unmute the music.</li>

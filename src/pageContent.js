@@ -432,29 +432,29 @@ const pageContent = {
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `Reluctantly, you follow the left path and enter into a room. As you enter the room, the door locks itself
-        again. You realise that your choice is now final and it cannot be reversed.`
+        `Grudgingly, you follow the left path that leads you into a similar room. The moment you all enter the room,
+        the door locks itself. You realize that your decision is final and cannot be changed.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@friend4: Do you think we should have chosen the other way?`
+      "text": `@friend4: Should we have chosen the other way?`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@friend1: Our choice is final now. There is nothing we can do about it.`
+      "text": `@friend1: Our choice is locked now. There is nothing we can do about it.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@name: Yes, @friend1 is right. We should focus all our attention on moving through this door now.`
+      "text": `@name: Yes, @friend1 is right. We should focus all our attention on passing through this door now.`
     },
 
     {
@@ -462,7 +462,7 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": 
-        `You move forward to look at the door. As expected, it is locked. But, you find a something engraved on the
+        `You move forward to look at the door. As expected, it is locked. But, you find something engraved on the
         wall near the door.`
     },
 
@@ -483,7 +483,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@randomFriend: Look here I found something.`
+      "text": `@randomFriend: Look here, I found something.`
     },
 
     {
@@ -498,7 +498,14 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@name: I think I figured out the answer.`
+      "text": `@name: I think this is sufficient to pass through.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct code and click on the button to open the door.`
     }
 
   ],
@@ -509,17 +516,18 @@ const pageContent = {
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `The door opens and leads you into a passage. You aren't sure if you should be happy about it or not. You know
-        that this passage could lead you into a trap and kill you. After walking a few steps, you start to see a room
-        in front of you. There is a chance that you could be safe for now. You enter the room and the door closes behind
-        you.`
+        `The door opens and leads you into a passage. Are you supposed to be happy about it? You aren't sure.
+        You know that this passage could lead you into a trap and kill you. But you also have complete faith in the
+        way you cracked the code. So, there is a good chance that you will be safe. After walking a few steps, you
+        start to see a room in front of you. You pace up your walking as you can sense that you are safe. Moments
+        later, you enter the room. As usual, the door closes behind you.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@name: Looks like we are safe for now.`
+      "text": `@name: It looks like we are safe for now.`
     },
 
     {
@@ -532,7 +540,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": `@friend4: I checked the door. It is locked and needs a password.`
     },
 
@@ -540,7 +548,77 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@friend1: Look here. I found the clue needed to open the door.`
+      "text": 
+        `You start looking around for bits of paper, but surprisingly you can't find anything. You also search the
+        walls to check if there is anything engraved on it. But to your frustration, there is nothing.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Did anyone of you manage to find anything?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `The answer was a collective no. You can feel the morale slipping in the room. Suddenly, you realize that you had
+        been trying to search for papers and engravings rather than clues. So you decide to take a step back and have a
+        broad view of the room. And to your satisfaction, you manage to find something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Look there, above the door through which we entered.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: There is a shelf above the door. And there is a box lying above it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: It must contain the clue.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: But how will we get there? It is too high.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: It is just about lying up there. If we can somehow tilt it slightly, it will fall.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend4: Let me try throwing my shoe at the box.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `@friend4 moves near the door, jumps in the air and throws a shoe at it. The box shakes a little
+        and falls to the ground. You all erupt in joy. You open the box and find a piece of paper inside it.`
     },
 
     {
@@ -576,6 +654,144 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `@randomFriend: What is this supposed to mean?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
+  "room-6": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into another passage. This time, you don't bother to think whether your
+        answer was correct or not. You have already lost a lot of time, and you aren't sure how long this will
+        continue. So, you quickly move through the passage. You enter the room and rush to have a look at the door.
+        As expected, the door is locked and needs a password to open.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: How many more rooms are there?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Well, our best hope lies in keeping on moving as fast as we can.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend2: Let's find any clues we can. And let's not waste any more time searching for papers only.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `While searching near the door, you find something engraved on the wall next to it. However, due to the dim
+        light, it is hard to read it. You start searching nearby and find a small piece of glass. Somehow, using it,
+        you focus the light on the wall to make it readable and note it down.`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `.-- .... .- -`,
+          `.. ...`,
+          `... ---`,
+          `..-. .-. .- --. .. .-.. .`,
+          `- .... .- -`,
+          `... .- -.-- .. -. --.`,
+          `.. - ...`,
+          `-. .- -- .`,
+          `-... .-. . .- -.- ...`,
+          `.. -`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Come here. I found something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: What on earth does this mean?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: It is some form of cypher. We need its key to decode it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: @name, I found something that might help.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `@friend1 hands you a small piece of paper that he found. You read it aloud.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `In dots and dashes, I strictly appear,`,
+          `The key to the previous room will help you here.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Decoding the cypher should tell us how to move forward.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
     }
 
   ]

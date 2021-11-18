@@ -3,6 +3,7 @@ const correctAnswers = {
     "room-2": "rocket",
     "room-4": "49013",
     "room-5": "morse",
+    "room-6": "silence"
 }
 
 export {correctAnswers}

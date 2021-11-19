@@ -51,6 +51,9 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       changeCorrectPage()
       updateError("remove")
     }
+    else if (response === "invalid"){
+      updateError("")
+    }
     else{
       if (wrongSame.includes(pageTitle)){
         localStorage.setItem("wrongAttempts", Number(localStorage.getItem("wrongAttempts")) + 1)

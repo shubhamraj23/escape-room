@@ -37,6 +37,7 @@ const noMessage = {
 const errorMessage = {
   "room-1": "Incorrect key. Please try again.",
   "room-2": "Incorrect password. Please try again.",
+  "room-6": "Password must be a single word. Please try again."
 }
 
 export {buttonContent, leftButtonContent, inputContent, errorMessage, noMessage};

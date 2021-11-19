@@ -1,4 +1,5 @@
 import {correctAnswers} from "./correctAnswers"
+import {validateAnswer} from "./componentStatus"
 
 const friends = ["Kaushik", "Ritik", "Vaibhav", "Divya", "Vibhuti", "Shubham", 
     "Namrata", "Arpita", "Shambhavi", "Vaidehi", "Jaya", "Satyam", "Anand", "Rajiv", 
@@ -31,13 +32,20 @@ const verifyResults = (page, userInput) => {
   if (page==="instructions"){
     return generateNames(userInput)
   }
+
+  if (validateAnswer.includes(page)){
+    if (page === "room-6"){
+      if (userInput.split(" ").length !== 1){
+        return "invalid"
+      }
+    }
+  }
+
+  if(userInput.toLowerCase() === correctAnswers[page]){
+    return "correct"
+  }
   else{
-    if(userInput.toLowerCase() === correctAnswers[page]){
-      return "correct"
-    }
-    else{
-      return "incorrect"
-    }
+    return "incorrect"
   }
 }
 

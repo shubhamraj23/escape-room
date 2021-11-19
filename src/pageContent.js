@@ -761,9 +761,8 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
-      "text": 
-        `@friend1 hands you a small piece of paper that he found. You read it aloud.`
+      "id": "remove-bottom",
+      "text": `@friend1 hands you a small piece of paper. You read it aloud.`
     },
 
     {
@@ -792,6 +791,168 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
+    }
+
+  ],
+
+  "room-7": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you to another passage. In your opinion, you are reasonably confident about your
+        answer, and you proceed. Moments later, you see a room in front of you. You enter it, and the door closes
+        behind you. You have a look around the room. You find a similar door at the other end of the room. But it is
+        the walls that draw your attention. You find that the four walls of the room have four different portraits
+        hanging on them. And you immediately sense that there should be something in those portraits that will lead you
+        out of the room.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text":
+        `@name: Everyone, choose one of the walls and look at the portraits. I am sure there will be some clues there.
+        I will have a look at the door.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You move forward and have a look at the exit door. You look at the door lock and find that it requires a
+        password with eight characters to open it. You start looking nearby when @friend2's voice catches you.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text":
+        `@friend2: @name, I found something here. Everyone, take a look behind the portrait. You might find
+        something, either on the wall or on the back of the portrait.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2 hands you a piece of paper. You open it and read it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Cars and cabs, media and press,`,
+          `I am there, wherever you are careless.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: I found something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: I also found something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend3: Same here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You have a look at all the clues one after the other. First, you look at the clue that @friend4 gave you.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Not to be missed, rearranging would work fine,`,
+          `The key to this door lies in front of every line.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Next you look at the clue that @friend1 gave you.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `An eight-letter word you would hate to face,`,
+          `Cause I am too deadly if you encounter me in case.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `And finally you look at the clue that @friend3 gave you.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Damage and loss await as I am undercover,`,
+          `Easy to mitigate, difficult to recover.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: I can't understand what all this is supposed to mean.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
     }
 
   ]

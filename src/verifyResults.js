@@ -34,8 +34,21 @@ const verifyResults = (page, userInput) => {
   }
 
   if (validateAnswer.includes(page)){
-    if (page === "room-6"){
+    if (page === "room-4"){
+      if (userInput.length !== 5){
+        return "invalid"
+      }
+      if(userInput.match(/^[0-9]+$/) === null){
+        return "invalid"
+      }
+    }
+    else if (page === "room-6"){
       if (userInput.split(" ").length !== 1){
+        return "invalid"
+      }
+    }
+    else if (page === "room-7"){
+      if (userInput.length !== 8){
         return "invalid"
       }
     }

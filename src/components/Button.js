@@ -61,6 +61,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       }
       else{
         changeWrongPage()
+        updateError("remove")
       }
     }
   }

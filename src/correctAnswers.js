@@ -5,6 +5,7 @@ const correctAnswers = {
     "room-5": "morse",
     "room-6": "silence",
     "room-7": "accident",
+    "room-8": "56332",
 }
 
 export {correctAnswers}

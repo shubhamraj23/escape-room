@@ -34,7 +34,7 @@ const verifyResults = (page, userInput) => {
   }
 
   if (validateAnswer.includes(page)){
-    if (page === "room-4"){
+    if (page === "room-4" || page === "room-8"){
       if (userInput.length !== 5){
         return "invalid"
       }

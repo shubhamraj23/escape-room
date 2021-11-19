@@ -852,7 +852,7 @@ const pageContent = {
         "id": "remove-bottom",
         "text": [
           `Cars and cabs, media and press,`,
-          `I am there, wherever you are careless.`
+          `I am present wherever you are careless.`
         ]
       }
     },
@@ -955,6 +955,94 @@ const pageContent = {
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
+  ],
+
+  "room-8": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You begin walking through the passage behind it. Moments later, you enter a small room.
+        You find the room unusual, as it has a very high ceiling which isn't even visible in the dim lights. But you
+        decide to focus all your attention on the things visible in front of you. You find a small table in front of
+        you. You walk towards it and take a look at it. On top of the table, you see the following.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room8_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: Gummy bears. What are they supposed to be doing here?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Can I eat some? I am really hungry.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: They can be poisonous. Perhaps they hold a clue.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: Only part of the clue. I found something here.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The colour white is at one of the extremes.`,
+          `The colour yellow has red and blue as its neighbours.`,
+          `The colour green has none to its left.`,
+          `The colour blue is next to white.`,
+          `If you want to pass this room,`,
+          `You need a number from left to right.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You move forward to check the door. It has a five digit combination lock.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: We need a five digit number to open the door.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct key and click on the button to open the door.`
+    }
   ]
 
 }

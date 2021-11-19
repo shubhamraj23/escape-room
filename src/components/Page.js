@@ -10,7 +10,7 @@ import LeftButton from "./LeftButton"
 import {pageContent} from '../pageContent'
 import {errorMessage, noMessage} from '../buttonContent'
 import {parser} from '../parser'
-import {rollPages, noInput, noHeader, backButton, choicePages} from "../componentStatus"
+import {rollPages, noInput, noHeader, backButton, choicePages, noBottom} from "../componentStatus"
 
 import roll from '../images/parchment-paper.png'
 import paper from '../images/parchment-paper.jpg'
@@ -32,6 +32,7 @@ const Page = ({updateApp, pageBackground}) => {
   const [backPress, informButton] = useState(false)
   const [leftButton, updateLeftButton] = useState("remove")
   const [leftPress, informLeftButton] = useState(false)
+  const [bottomBar, updateBottom] = useState("")
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -44,6 +45,7 @@ const Page = ({updateApp, pageBackground}) => {
     changeBack()
     changeBackground()
     changeHeader()
+    changeBottom()
     changeInput()
     changeContent(parser(pageContent[pageTitle]))
   }, [pageTitle]); 
@@ -75,6 +77,15 @@ const Page = ({updateApp, pageBackground}) => {
     else{
       updateHeader("show")
     } 
+  }
+
+  const changeBottom = () => {
+    if (noBottom.includes(pageTitle)){
+      updateBottom("remove")
+    }
+    else{
+      updateBottom("")
+    }
   }
 
   const changeInput = () => {
@@ -177,7 +188,7 @@ const Page = ({updateApp, pageBackground}) => {
         
         <div className="row input-separator">
           <div className="col-11 col-md-10 mx-auto">
-            <div className="row">
+            <div className={`row ${bottomBar}`}>
               <div className={`col-6 ${inputBox} p-0`}>
                 <Input page={pageTitle} changeUserInput={changeUserInput}/>
               </div>

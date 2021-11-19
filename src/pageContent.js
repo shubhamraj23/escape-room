@@ -1026,7 +1026,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": `You move forward to check the door. It has a five digit combination lock.`
     },
 
@@ -1043,6 +1043,31 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct key and click on the button to open the door.`
     }
+  ],
+
+  "end-1": [
+    {
+      "tag": "h1",
+      "class": "home-title",
+      "id": "",
+      "text": "Game Over"
+    },
+
+    {
+      "tag": "div",
+      "class": `col-10 offset-1 my-5 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "",
+        "id": "",
+        "text": [
+          `Suddenly water starts filling the room from top. The room fills with water. You try your best but 
+          there is no way to escape the room. You all drown and die.`,
+          `Refresh the page to restart the game.`
+        ]
+      }
+    }
+
   ]
 
 }

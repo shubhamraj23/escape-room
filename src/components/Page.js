@@ -132,6 +132,13 @@ const Page = ({updateApp, pageBackground}) => {
     updateInstructions(visibilty)
   }
 
+  const removeRepeat = (page) => {
+    if (page.includes("repeated")){
+      return page.replace("repeated-", "")
+    }
+    return page
+  }
+
   return (
     <div>
       <div className={`col-12 top-section ${header}`}
@@ -210,10 +217,10 @@ const Page = ({updateApp, pageBackground}) => {
             
             <div className="row">
               <div className={`col-12 ${missing} ${textSize} px-2`}>
-                <p id="error">{noMessage[pageTitle]}</p>
+                <p id="error">{noMessage[removeRepeat(pageTitle)]}</p>
               </div>
               <div className={`col-12 ${error} ${textSize} px-2`}>
-                <p id="error">{errorMessage[pageTitle]}</p>
+                <p id="error">{errorMessage[removeRepeat(pageTitle)]}</p>
               </div>
             </div>
           </div>

@@ -18,11 +18,18 @@ const Input = ({page, changeUserInput}) => {
     setInput(e.target.value)
   }
 
+  const removeRepeat = (page) => {
+    if (page.includes("repeated")){
+      return page.replace("repeated-", "")
+    }
+    return page
+  }
+
   return (
     <div>
       <input 
         type="text" className="mx-auto px-2" id="input-box"
-        placeholder={`${inputContent[page]}`}
+        placeholder={`${inputContent[removeRepeat(page)]}`}
         onInput={e => updateInput(e)}  
       >
       </input>

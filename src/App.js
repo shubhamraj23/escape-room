@@ -1,5 +1,6 @@
 import {useState} from "react";
 
+import {repeatPages} from "./componentStatus";
 import Background from "./components/Background";
 import MuteButton from "./components/MuteButton";
 import Page from "./components/Page";
@@ -11,6 +12,9 @@ function App() {
 
   const updateApp = (page) => {
     update(page)
+    if (repeatPages.includes(page)){
+      localStorage.setItem(page, Number(localStorage.getItem(page)) + 1)
+    }
   }
   
   return (

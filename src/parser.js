@@ -71,6 +71,12 @@ const parser = (content) => {
           {text}
         </h2>
     }
+    else if(pageContent["tag"] === "h6"){
+      divContent = 
+        <h6 className={className} id={id}>
+          {text}
+        </h6>
+    }
     else if(pageContent["tag"] === "p"){
       divContent = 
         <p className={className} id={id}>

@@ -3,7 +3,7 @@ import {useState, useEffect} from "react"
 import {buttonContent} from "../buttonContent"
 import {correctAnswer, wrongAnswer, backTraversal, leftButtonTraversal} from "../pageTraversal"
 import {verifyResults} from "../verifyResults"
-import {startPages, wrongSame, choicePages} from "../componentStatus"
+import {startPages, wrongSame, choicePages, repeatPages} from "../componentStatus"
 
 const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton, leftStatus, informLeftButton}) => {
   const [pageTitle, updateButton] = useState("home-page")
@@ -45,7 +45,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       updateMissing("remove")
     }
 
-    const response = verifyResults(pageTitle, textInput)
+    const response = verifyResults(removeRepeat(pageTitle), textInput)
 
     if(response === "correct"){
       changeCorrectPage()
@@ -66,29 +66,49 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
     }
   }
 
+  const addRepeat = (page) => {
+    if (repeatPages.includes(page)){
+      if (Number(localStorage.getItem(page)) !== 0){
+        return "repeated-" + page
+      }
+    }
+    return page
+  }
+
+  const removeRepeat = (page) => {
+    if (page.includes("repeated")){
+      return page.replace("repeated-", "")
+    }
+    return page
+  }
+
   const changeCorrectPage = () => {
-    const page = correctAnswer[pageTitle]
+    let page = correctAnswer[removeRepeat(pageTitle)]
+    page = addRepeat(page)
     updateApp(page)
     updatePage(page)
     changeButton(page)
   }
 
   const changeWrongPage = () => {
-    const page = wrongAnswer[pageTitle]
+    let page = wrongAnswer[removeRepeat(pageTitle)]
+    page = addRepeat(page)
     updateApp(page)
     updatePage(page)
     changeButton(page)
   }
 
   const reversePage = () => {
-    const page = backTraversal[pageTitle]
+    let page = backTraversal[removeRepeat(pageTitle)]
+    page = addRepeat(page)
     updateApp(page)
     updatePage(page)
     changeButton(page)
   }
 
   const leftPage = () => {
-    const page = leftButtonTraversal[pageTitle]
+    let page = leftButtonTraversal[removeRepeat(pageTitle)]
+    page = addRepeat(page)
     updateApp(page)
     updatePage(page)
     changeButton(page)
@@ -121,7 +141,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
         onClick={navigatePage}
       >
         <h1 className={`button-text ${textVisible}`}>
-          {buttonContent[pageTitle]}
+          {buttonContent[removeRepeat(pageTitle)]}
         </h1>
       </button>
     </div>

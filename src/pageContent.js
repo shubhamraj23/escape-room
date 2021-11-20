@@ -1047,27 +1047,364 @@ const pageContent = {
 
   "end-1": [
     {
-      "tag": "h1",
-      "class": "home-title",
+      "tag": "p",
+      "class": `${textSize} first-content`,
       "id": "",
-      "text": "Game Over"
+      "text": 
+        `You enter the key, but the door doesn't open. Suddenly you start hearing some strange noises from the
+        suspicious ceiling above you. And in an instant, the room begins flooding with water. The water hits @friend3
+        and @friend1 with great force. Their heads strike the wall, and they die on the spot. You can't believe your
+        eyes. The people you loved died in front of you, and you couldn't do anything about it. The water level rises
+        to your chest. You move towards the door and try different combinations to open it, but the lock seems to have
+        become inactive. The water level has risen to your head now. You try your best to float in the water. You hear
+        the cries of your friends who don't know what to do. Soon you realise that @friend2 and @friend4 do not know
+        how to swim. They drown before you can reach them for assistance. You can't believe your eyes. Moments later,
+        your head touches something above it. You realise that water has almost filled the entire room, and your head
+        is right next to the ceiling. You know that you cannot do anything now. As your await your death, you start
+        thinking, should you have entered this house?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    },
+
+  ],
+
+  "repeated-room-4": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into a passage. Moments later, you see a small door in front of you. You
+        rush through it, and it closes behind you. Upon entering, you are surprised to find yourself in a room you
+        have already visited before.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: I can't believe it. We are back here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Let's quickly have a relook at the clues and move out of this room.`
     },
 
     {
       "tag": "div",
-      "class": `col-10 offset-1 my-5 ${textSize}`,
+      "class": `riddle my-2 ${textSize}`,
       "id": "",
       "text": {
-        "class": "",
-        "id": "",
+        "class": "riddle-text",
+        "id": "remove-bottom",
         "text": [
-          `Suddenly water starts filling the room from top. The room fills with water. You try your best but 
-          there is no way to escape the room. You all drown and die.`,
-          `Refresh the page to restart the game.`
+          `A 5 digit numeric code with distinct digits will open the door.`
         ]
       }
-    }
+    },
 
+    {
+      "tag": "img",
+      "class": "col-8 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room4_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct code and click on the button to open the door.`
+    }
+  ],
+
+  "repeated-room-5": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You quickly walk through the passage. The door leading to it closes behind you as you rush
+        through it. You find yourself in a room you have already visited before, again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Is this a joke?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: We must have got something wrong somewhere earlier. Let's try again.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-8 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room5_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+  ],
+
+  "repeated-room-6": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens, and you quickly make your way through the passageway. You realise that you have lost a lot
+        of time circling through the already visited rooms. This time, hopefully, you will find a new one. But to
+        your disappointment, you find another room that you have entered before. You can believe your eyes. You start
+        thinking what has gone wrong, and where?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: We are circling the same rooms again and again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: This is a trick.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text":
+        `@name: No. If you remember, the message on the board said that a correct answer will always lead us forward.
+        We have gone wrong, at least once before. But where?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: Let us give another it try here, and then see what happens.`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `.-- .... .- -`,
+          `.. ...`,
+          `... ---`,
+          `..-. .-. .- --. .. .-.. .`,
+          `- .... .- -`,
+          `... .- -.-- .. -. --.`,
+          `.. - ...`,
+          `-. .- -- .`,
+          `-... .-. . .- -.- ...`,
+          `.. -`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `In dots and dashes, I strictly appear,`,
+          `The key to the previous room will help you here.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
+    }
+  ],
+
+  "repeated-room-7": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You start walking through the passage behind it. As you walk, you hope the path will lead
+        you to something good. After walking for a while, you see another door in front of you. Entering the room,
+        you are surprised to find that it was previously visited by you. You can't believe it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: You have got to be kidding me. How are we back here?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: We have gone wrong somewhere. Let's have a look again quickly. We don't have much time.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Cars and cabs, media and press,`,
+          `I am present wherever you are careless.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Not to be missed, rearranging would work fine,`,
+          `The key to this door lies in front of every line.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `An eight-letter word you would hate to face,`,
+          `Cause I am too deadly if you encounter me in case.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Damage and loss await as I am undercover,`,
+          `Easy to mitigate, difficult to recover.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+  ],
+
+  "repeated-room-8": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You quickly walk through the passage. Moments later, you find yourself in a room you have
+        already visited before, again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: Not again, please. I am sick of this now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: @friend2, you can't lose hope so easily. We have to get out of this.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room8_img1.png"
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The colour white is at one of the extremes.`,
+          `The colour yellow has red and blue as its neighbours.`,
+          `The colour green has none to its left.`,
+          `The colour blue is next to white.`,
+          `If you want to pass this room,`,
+          `You need a number from left to right.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct key and click on the button to open the door.`
+    }
   ]
 
 }

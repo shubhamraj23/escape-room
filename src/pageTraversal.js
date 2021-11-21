@@ -12,6 +12,7 @@ const correctAnswer = {
     "room-6": "room-17",
     "room-7": "room-4",
     "room-8": "room-7",
+    "room-9": "room-10",
 }
 
 const leftButtonTraversal = {
@@ -24,6 +25,7 @@ const wrongAnswer = {
     "room-6": "room-7",
     "room-7": "room-8",
     "room-8": "end-1",
+    "room-9": "room-15",
 }
 
 const backTraversal = {

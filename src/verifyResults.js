@@ -39,11 +39,11 @@ const verifyResults = (page, userInput) => {
   }
 
   if (validateAnswer.includes(page)){
-    if (page === "room-4" || page === "room-8"){
+    if (page === "room-4" || page === "room-8" || page === "room-9"){
       if (userInput.length !== 5){
         return "invalid"
       }
-      if(userInput.match(/^[0-9]+$/) === null){
+      if (userInput.match(/^[0-9]+$/) === null){
         return "invalid"
       }
     }

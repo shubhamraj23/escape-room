@@ -12,6 +12,7 @@ const buttonContent = {
   "room-6": "Open",
   "room-7": "Open",
   "room-8": "Open",
+  "room-9": "Open",
 }
 
 const leftButtonContent = {
@@ -27,6 +28,7 @@ const inputContent = {
   "room-6": "Password",
   "room-7": "Password",
   "room-8": "Key",
+  "room-9": "Code",
 }
 
 const noMessage = {
@@ -38,6 +40,7 @@ const noMessage = {
   "room-6": "Please enter a password",
   "room-7": "Please enter a password",
   "room-8": "Please enter a key",
+  "room-9": "Please enter a code",
 }
 
 const errorMessage = {
@@ -47,6 +50,7 @@ const errorMessage = {
   "room-6": "Password must be a single word. Please try again.",
   "room-7": "Please enter a password with 8 characters.",
   "room-8": "Please enter a 5 digit number.",
+  "room-9": "Please enter a 5 digit numeric code.",
 }
 
 export {buttonContent, leftButtonContent, inputContent, errorMessage, noMessage};

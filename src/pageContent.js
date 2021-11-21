@@ -1043,40 +1043,92 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct key and click on the button to open the door.`
     }
+
   ],
 
-  "end-1": [
+  "room-9": [
     {
       "tag": "p",
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `You enter the key, but the door doesn't open. Suddenly you start hearing some strange noises from the
-        suspicious ceiling above you. And in an instant, the room begins flooding with water. The water hits @friend3
-        and @friend1 with great force. Their heads strike the wall, and they die on the spot. You can't believe your
-        eyes. The people you loved died in front of you, and you couldn't do anything about it. The water level rises
-        to your chest. You move towards the door and try different combinations to open it, but the lock seems to have
-        become inactive. The water level has risen to your head now. You try your best to float in the water. You hear
-        the cries of your friends who don't know what to do. Soon you realise that @friend2 and @friend4 do not know
-        how to swim. They drown before you can reach them for assistance. You can't believe your eyes. Moments later,
-        your head touches something above it. You realise that water has almost filled the entire room, and your head
-        is right next to the ceiling. You know that you cannot do anything now. As your await your death, you start
-        thinking, should you have entered this house?`
+        `Hesitantly, you follow the right path. While moving forward, you hear your friends discuss whether they
+        should have chosen the less deadly path or not. The same thought comes to your mind. You think you can choose
+        the other way if you go back to the diverging section. While walking, you see a small door in front of you,
+        and you enter the room. As soon as you enter the room, the door locks automatically. Your decision is
+        irreversible.`
     },
 
     {
-      "tag": "h2",
-      "class": "",
+      "tag": "p",
+      "class": `${textSize}`,
       "id": "",
-      "text": `GAME OVER`
+      "text": `@name: Now that we are here, let's focus all our attention on moving out of here.`
     },
 
     {
-      "tag": "h6",
-      "class": "",
+      "tag": "p",
+      "class": `${textSize}`,
       "id": "",
-      "text": `Refresh the page to restart the game.`
+      "text":
+        `You have a look around the room. It is very bright inside. As a result, you can see lots of strange symbols
+        engraved on the wall. You decide to collect all of them in one place and see what they mean.`
     },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text":
+        `@name: Everyone, please note down all the symbols on the walls in one place. It might contain the clue that
+        we need.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `After gathering all the mysterious symbols on the wall, you come up with the following.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room9_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text":
+        `Suddenly, you come up with a thought. You rush towards the door to check the lock. You find a padlock with
+        that needs a code containing 5 numeric digits. And just below the padlock, you find the following.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room9_img2.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Each symbol represents a number. We need to decipher the symbols.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct code and click on the button to open the door.`
+    }
 
   ],
 
@@ -1132,6 +1184,7 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct code and click on the button to open the door.`
     }
+
   ],
 
   "repeated-room-5": [
@@ -1172,6 +1225,7 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct password and click on the button to open the door.`
     }
+
   ],
 
   "repeated-room-6": [
@@ -1258,6 +1312,7 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
     }
+
   ],
 
   "repeated-room-7": [
@@ -1347,6 +1402,7 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct password and click on the button to open the door.`
     }
+
   ],
 
   "repeated-room-8": [
@@ -1405,6 +1461,42 @@ const pageContent = {
       "id": "",
       "text": `Enter the correct key and click on the button to open the door.`
     }
+
+  ],
+
+  "end-1": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You enter the key, but the door doesn't open. Suddenly you start hearing some strange noises from the
+        suspicious ceiling above you. And in an instant, the room begins flooding with water. The water hits @friend3
+        and @friend1 with great force. Their heads strike the wall, and they die on the spot. You can't believe your
+        eyes. The people you loved died in front of you, and you couldn't do anything about it. The water level rises
+        to your chest. You move towards the door and try different combinations to open it, but the lock seems to have
+        become inactive. The water level has risen to your head now. You try your best to float in the water. You hear
+        the cries of your friends who don't know what to do. Soon you realise that @friend2 and @friend4 do not know
+        how to swim. They drown before you can reach them for assistance. You can't believe your eyes. Moments later,
+        your head touches something above it. You realise that water has almost filled the entire room, and your head
+        is right next to the ceiling. You know that you cannot do anything now. As your await your death, you start
+        thinking, should you have entered this house?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+
   ]
 
 }

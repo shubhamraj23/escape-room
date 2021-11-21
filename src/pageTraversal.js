@@ -1,5 +1,5 @@
 const correctAnswer = {
-    "home-page": "welcome",
+    "home-page": "room-9",
     "welcome": "instructions",
     "instructions": "scenario",
     "scenario": "the-adventure-begins",
@@ -13,6 +13,7 @@ const correctAnswer = {
     "room-7": "room-4",
     "room-8": "room-7",
     "room-9": "room-10",
+    "room-10": "room-11",
 }
 
 const leftButtonTraversal = {
@@ -26,10 +27,12 @@ const wrongAnswer = {
     "room-7": "room-8",
     "room-8": "end-1",
     "room-9": "room-15",
+    "room-10": "room-15",
 }
 
 const backTraversal = {
-    
+    "room-19": "room-18",
+    "room-20": "room-18"
 }
 
 export {correctAnswer, leftButtonTraversal, wrongAnswer, backTraversal};

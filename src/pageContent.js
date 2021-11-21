@@ -1464,6 +1464,56 @@ const pageContent = {
 
   ],
 
+  "repeated-room-9": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You walk through the passage, and moments later you see a small door in front of you.
+        You rush through it, and it closes behind you. Upon entering, you are surprised to find yourself in a room
+        you have already visited before.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: How are we here again?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Let's have a look at the clues again.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room9_img1.png"
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room9_img2.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct code and click on the button to open the door.`
+    }
+
+  ],
+
   "end-1": [
     {
       "tag": "p",

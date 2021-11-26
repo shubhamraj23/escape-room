@@ -1,5 +1,5 @@
 const correctAnswer = {
-    "home-page": "room-9",
+    "home-page": "welcome",
     "welcome": "instructions",
     "instructions": "scenario",
     "scenario": "the-adventure-begins",
@@ -18,6 +18,7 @@ const correctAnswer = {
 
 const leftButtonTraversal = {
     "room-3": "room-4",
+    "room-18": "room-19"
 }
 
 const wrongAnswer = {

@@ -1132,6 +1132,125 @@ const pageContent = {
 
   ],
 
+  "room-10" : [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into a passage. Do you feel happy about it? It's unclear to you. This way may
+        lead you into a trap and kill you. But you are confident that you have cracked the code. As you walk, a sound
+        suddenly appears behind you. It makes you all jump. Looking back, you find that the passage behind you is no
+        longer visible. You sense that you have entered another room, and the sound was of the door closing. A single
+        candle near the exit door is lighting the room. The lighting is so faint that you can barely see your feet.
+        You keep on stumbling, but somehow you manage to reach the exit door and figure out that it needs a password
+        to open.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: Hey! You just stood on my foot.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: Sorry, I can't see anything. Someone, please find a way to turn on the lights.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `Meanwhile, you start examining the segment of the wall visible by the light of the candle. The tiles on
+        the wall seem strange. As you knock on one, you discover that it is hollow. Somehow, you manage to remove
+        the tile. Behind it is a small handle. You grasp the handle and try to pull it. Nothing happens. You try
+        again with more effort. This time the handle comes out with a small chunk of the wall with it. Suddenly,
+        the room lightens up. Your friends cheer with joy. You have a look at the handle and find the following
+        engraved on it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `H Q Z O T F E T`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You start to wonder about its meaning when your friends ask you to look at the walls. You glance around
+        the room to find lots of engravings on the wall. You decide to collect them all in one place to analyze them.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `A -> K`,
+          `K -> R`,
+          `R -> D`,
+          `D -> M`,
+          `M -> Z`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: This doesn't make any sense.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: I think I found the missing clue. Check this.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room10_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: I think I know how to crack this.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -1479,7 +1598,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@randomFriend: How are we here again?`
+      "text": `@randomFriend: Why are we here again?`
     },
 
     {
@@ -1510,6 +1629,78 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Enter the correct code and click on the button to open the door.`
+    }
+
+  ],
+
+  "repeated-room-10" : [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You walk through the passage, and moments later you see a small door in front of you.
+        You rush through it, and it closes behind you. Upon entering, you find yourself in a room you have visited
+        before, again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Can't believe we are back here again?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Let us quickly have a look at the clues again.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `H Q Z O T F E T`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `A -> K`,
+          `K -> R`,
+          `R -> D`,
+          `D -> M`,
+          `M -> Z`
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room10_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
     }
 
   ],

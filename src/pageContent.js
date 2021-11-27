@@ -1251,6 +1251,118 @@ const pageContent = {
 
   ],
 
+  "room-11": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `Once again, the door opens. You rush through it and wham! You're on the ground,
+        hurt yet fine to stand up and walk.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Hey @name! Are you alright?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Yes, I am fine. Just be careful while you move through.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You recognise that you fell from the top. You expected another passage similar to the previous ones. But
+        instead, there was a trough where you are lying. After recovering from the sudden impact, you have a look
+        around the room. It is unlike any other room you've seen so far. You find furniture, vases, art and other
+        decoration items lying here and there. In the middle of the room, there is an empty table. Uncertain of
+        what to do, you look at the exit door. It needs a password to open. You find a couple of pieces of paper
+        nearby. You pick up and have a look at them.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `78 73 80 124 72 88 109 56, 66 111 131 125 57 129 95.`,
+          `109 93 115 59 90 103 35 28 121 119.`,
+          `116 64 132 109 56, 1 21 17 29 117 103 105 138 13 95.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: @friend2, come here. What do you think this is supposed to mean?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend2: Not sure, let's search the room for something else.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You search around the room for clues. You carefully look at all the decoration items present in the
+        room, but to your annoyance, you find nothing there. Suddenly, the table in the middle of the room catches
+        your eye. It is empty, but a book lies under the table's legs. You carefully remove it and have a glance
+        through it. To your surprise, you find that all the pages are blank except for one, which reads the following.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The sky was pitch black as if engulfed in black ink. But the darkness did not last more than a second.
+          A multitude of stars filled the length of the sky. A distinct patch of crimson slowly made its way through
+          the night sky. Dawn had arrived. The first rays of sunlight lit up my room. The morning contains some magic
+          that would safely make you forget all your troubles and move you off reality. But even if I want, I cannot forget
+          the events of the past day. Several people had decoded the password of my social media account. Mark my words;
+          they will pay heavily for this. I need to send a message to such useless characters. Those six people need to
+          provide me with the correct explanation to exit from their misery. They cannot be forgiven.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: This page must have the key behind the message.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -1694,6 +1806,87 @@ const pageContent = {
       "id": "",
       "text": "",
       "file": "game_images/room10_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
+  "repeated-room-11": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `Once again, the door opens. You rush through it and wham! You're on the ground. You have fallen again, and
+        you are surprised to find that it is the same room where you had fallen earlier.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: You have got to be kidding me.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Are you saying this because you fell over again or because we are back in this room again?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Both, to be precise.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: We are back here again. Let's have a relook at the clues.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `78 73 80 124 72 88 109 56, 66 111 131 125 57 129 95.`,
+          `109 93 115 59 90 103 35 28 121 119.`,
+          `116 64 132 109 56, 1 21 17 29 117 103 105 138 13 95.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The sky was pitch black as if engulfed in black ink. But the darkness did not last more than a second.
+          A multitude of stars filled the length of the sky. A distinct patch of crimson slowly made its way through
+          the night sky. Dawn had arrived. The first rays of sunlight lit up my room. The morning contains some magic
+          that would safely make you forget all your troubles and move you off reality. But even if I want, I cannot forget
+          the events of the past day. Several people had decoded the password of my social media account. Mark my words;
+          they will pay heavily for this. I need to send a message to such useless characters. Those six people need to
+          provide me with the correct explanation to exit from their misery. They cannot be forgiven.`
+        ]
+      }
     },
 
     {

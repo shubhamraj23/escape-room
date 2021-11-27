@@ -14,6 +14,7 @@ const buttonContent = {
   "room-8": "Open",
   "room-9": "Open",
   "room-10": "Open",
+  "room-11": "Open",
 }
 
 const leftButtonContent = {
@@ -31,6 +32,7 @@ const inputContent = {
   "room-8": "Key",
   "room-9": "Code",
   "room-10": "Password",
+  "room-11": "Password",
 }
 
 const noMessage = {
@@ -44,6 +46,7 @@ const noMessage = {
   "room-8": "Please enter a key",
   "room-9": "Please enter a code",
   "room-10": "Please enter a password",
+  "room-11": "Please enter a password",
 }
 
 const errorMessage = {

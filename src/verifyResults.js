@@ -57,6 +57,20 @@ const verifyResults = (page, userInput) => {
         return "invalid"
       }
     }
+    else if (page === "room-12"){
+      if (userInput.match(/^[0-9]+$/) === null){
+        return "invalid"
+      }
+      if (userInput.length !== 8){
+        return "invalid"
+      }
+      if (Number(userInput.substring(0, 2)) > 31){
+        return "invalid"
+      }
+      if (Number(userInput.substring(2, 4)) > 12){
+        return "invalid"
+      }
+    }
   }
 
   if(userInput.toLowerCase() === correctAnswers[page]){

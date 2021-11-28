@@ -1363,6 +1363,167 @@ const pageContent = {
 
   ],
 
+  "room-12": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You don't rush through it this time. The fall you encountered the last time has left you
+        sceptical, and you don't want to get hurt again. Your friends walk through the door first, and you follow
+        them. You walk through the passage behind them, and moments later, you enter another room. Suddenly, the
+        door shuts behind you. Your eyes scan the room, which looks like a short junkyard. There are newspapers
+        stacked everywhere. In the middle of the room lies a small table containing more newspapers. You move
+        across the room to look at the exit door, and for a change, you find that it requires a date to open.
+        Above the door, you find a small metal plaque with the following words written on it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `RESCUE DATE`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": 
+        `@randomFriend: So, we need to enter a rescue date here to move past this room. But who has been rescued?
+        And from whom?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: That's what we need to figure out. Let's have a look at the table.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You turn back to look at the table. You find many newspapers stacked in heaps above and below the table.
+        But to your surprise, you can see something shiny between them, like a light source. You quickly remove the
+        newspapers and find a mobile phone hidden. The screen of the mobile phone is turned on and shows a
+        conversation between two people.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room12_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You try to explore the mobile phone to find more information, but the screen has frozen, and nothing is
+        happening. Frustrated, you slam the mobile phone on the newspapers, whose back cover opens and reveals a
+        piece of paper with a short message.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The baby was rescued on the Friday after his kidnap.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Suddenly, everything becomes clear to you. An idea comes to you that will help you crack the code.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": 
+        `@name: Everyone, search the newspaper. Look for any headline that says anything about a baby kidnapped or
+        rescued. The date of the newspaper will help us.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You start searching among the newspaper. After a while, @friend2 calls you.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: I found something. Look here is the newspaper.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-9 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room12_img2.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: But it doesn't have any date on it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Let's continue searching for more papers.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You keep on searching but find nothing.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: I think these are the only clues that we have got.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -1894,6 +2055,82 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "",
       "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
+  "repeated-room-12": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You start walking through the passage behind it. As you walk, you hope the path will lead
+        you to something good. After walking for a while, you see another door in front of you. Entering the room,
+        you are surprised to find that it was previously visited by you. You can't believe it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: You have got to be kidding me. How are we back here?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: We have gone wrong somewhere. Let's have a look again quickly. We don't have much time.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `RESCUE DATE`
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room12_img1.png"
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The baby was rescued on the Friday after his kidnap.`
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-9 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room12_img2.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
     }
 
   ],

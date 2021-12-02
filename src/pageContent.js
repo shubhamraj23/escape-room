@@ -1524,6 +1524,87 @@ const pageContent = {
 
   ],
 
+  "room-13": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You are still a bit sore from your fall, so you do not rush through the room. Your friends
+        take the lead this time. You follow them slowly in the passage, cautiously trying to avoid another risky
+        encounter. After a while, you enter another room quite different from other rooms you have visited so far.
+        You find three tables in three different corners of the room and one in the middle. You go and look at the
+        table in the middle while your friends examine the other tables. You find an unusual digital balance placed
+        on top of the table. This device doesn't give a reading but has a numeric pad below the pan that lets you
+        enter a value. You find some marbles of different colours placed on the pan. There are three red, two green,
+        one yellow and three blue marbles present. The balance is placed inside a small glass box frame, such that
+        you can only access the keypad.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `After examining this closely, you go and have a look at the other tables. You find see-saw balances on them,
+        with different marbles and weights placed on either side. Again, the entire apparatus is covered inside a glass
+        box frame. Hence, you cannot move around the different marbles and weights. The see-saw balances are shown below.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room13_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: Where is the exit door in this room? I can't see it anywhere.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You suddenly notice that there is no exit door in the room. But a thought comes into your mind. There is
+        one corner of the room which doesn't have any table. You go over there and tap the ground with your feet.
+        Immediately, you realise that the ground below it is hollow, and there might be a route beneath it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: I think this is trap door. It might open if we enter the correct key.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: But there do we enter the key. There is no door and no digital lock.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: The digital balance. That is the only place where we can enter a key`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct key and click on the button to open the door.`
+    }
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -1984,8 +2065,13 @@ const pageContent = {
       "class": `${textSize} first-content`,
       "id": "",
       "text": 
-        `Once again, the door opens. You rush through it and wham! You're on the ground. You have fallen again, and
-        you are surprised to find that it is the same room where you had fallen earlier.`
+        `As you expected, there was a trap door present. It opens and leads to a tunnel. Your friends are a
+        little scared of going through it. You also give it a second thought before sliding down. So far, you've
+        encountered passages, but this time there's a tunnel. Hence, you are a bit sceptical of sliding down it.
+        But then, you look at your watch and realise that time is running out. You will anyways die if you stay
+        there. So, hoping for the best, you take a deep breath and jump into the tunnel. Your friends follow you.
+        You slide, twist and turn and after a while, wham! You're on the ground. You have fallen again, and you
+        are surprised to find that it is the same room where you had fallen earlier.`
     },
 
     {
@@ -2133,6 +2219,57 @@ const pageContent = {
       "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
     }
 
+  ],
+
+  "repeated-room-13": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You and your friends move through the passage.  After a while, you enter another room,
+        and to your surprise, you find that you have visited it previously.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: I can't believe that we are here again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend3: Well, we need to get past this room again. Let's look at the clues.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You go and have a look at the table in the middle. You find an unusual digital balance placed on top of
+        the table. This device doesn't give a reading but has a numeric pad below the pan that lets you enter a
+        value. There are three red, two green, one yellow and three blue marbles present on the pan. After this,
+        you look at the see-saw balances on the remaining tables.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room13_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `Enter the correct key and click on the button to open the door.`
+    }
   ],
 
   "end-1": [

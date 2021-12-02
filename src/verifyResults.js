@@ -34,7 +34,7 @@ const generateNames = (text) => {
 }
 
 const verifyResults = (page, userInput) => {
-  if (page==="instructions"){
+  if (page === "instructions"){
     return generateNames(userInput)
   }
 
@@ -68,6 +68,11 @@ const verifyResults = (page, userInput) => {
         return "invalid"
       }
       if (Number(userInput.substring(2, 4)) > 12){
+        return "invalid"
+      }
+    }
+    else if (page === "room-13"){
+      if (userInput.match(/^[0-9]+$/) === null){
         return "invalid"
       }
     }

@@ -10,6 +10,7 @@ const correctAnswers = {
     "room-10": "patience",
     "room-11": "safely",
     "room-12": "22032012",
+    "room-13": "22",
 }
 
 export {correctAnswers}

@@ -2516,6 +2516,119 @@ const pageContent = {
       "text": `Refresh the page to restart the game.`
     }
 
+  ],
+
+  "end-4": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `As you expected, there was a trap door present. It opens and leads to a tunnel. You realize that time is
+        running out. Hence, you and your friends do not hesitate to jump inside it. You are confident about your
+        answer, and you jump after your friends. You slide, twist and turn. After a while, you see an opening. Just
+        as you pass through it, you realize that something is wrong. A deep ditch filled with hard rocks awaits you
+        below it. Just near the opening, you grasp a large stone to keep yourself from falling. You look down, and
+        to your horror, you find that all your friends have hit the rocks and are dead. You cannot believe what you
+        are seeing. You start to feel strain in your arms and realize that you cannot hold on for long. You try to
+        pull yourself up but are unable to do that. Finally accepting your fate, you let yourself go off the stone
+        and start falling. As you await your death, you start thinking, should you have entered this house in the
+        first place?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+
+  ],
+
+  "end-5": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens, and you rush through the passage. You are confident about your answer, and you lead
+        the way, with your friends following you. After a while, you start feeling a bit warmer than usual.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Does anyone else feel that it is getting warmer as we are moving?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Yes, it seems like it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: Don't you feel that we have been walking a bit longer than usual?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: You are scaring me now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Don't worry. I feel that we are safe.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `As you say that, large rocks begin to fall from the top. Realizing the danger, you try to evade them.
+        But the rocks hit @friend3 and @friend2 on the head, who died on the spot. You can't believe your eyes.
+        The people you loved died in front of you, and you couldn't do anything about it. Suddenly, the ground
+        starts shaking. Cracks appear on the steps you are standing. You jump forward to avoid getting sucked
+        into the ground as it splits. The floor opens up and reveals a large pool of burning hot magma. @friend1
+        and @friend4 lose the ground beneath their feet, get sucked into the magma and die. The ground starts
+        trembling beneath you. Moments later, you are hanging on one of the rocks, just evading your death. You
+        cannot believe what you are seeing. You start to feel strain in your arms and realize that you cannot
+        hold on for long. You try to pull yourself up but are unable to do that. Finally accepting your fate,
+        you let yourself go off the rock and start falling. As you await your death, you start thinking, should
+        you have entered this house in the first place?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+
   ]
 
 }

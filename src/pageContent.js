@@ -60,7 +60,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": "Please enter your name and click on the button below to proceed."
     } 
 
@@ -139,7 +139,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": 
         `You conclude that it is best to turn on the lights to see what is inside. If there is anything fearsome, 
         all five of you will immediately leave the building.`
@@ -148,7 +148,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Click on the button to turn on the lights.`
     }
 
@@ -196,14 +196,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: There is no choice but to move forward.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Click on the button to proceed.`
     }
 
@@ -262,7 +262,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": `You go there and find a piece of paper stuck on the wall with something scribbled.`
     },
 
@@ -297,15 +297,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
-      "text": 
-        `@name: We need to solve this riddle to proceed forward.`
+      "id": "remove-bottom",
+      "text": `@name: We need to solve this riddle to proceed forward.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct key and click on the button to open the door.`
     },
 
@@ -375,14 +374,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: I found one. And I think it is sufficient to get us through.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -420,7 +419,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@randomFriend: Which way should we choose now?`
     }
 
@@ -488,7 +487,7 @@ const pageContent = {
 
     {
       "tag": "img",
-      "class": "col-8 col-md-6 mx-auto",
+      "class": "col-10 col-md-6 mx-auto",
       "id": "",
       "text": "",
       "file": "game_images/room4_img1.png"
@@ -497,14 +496,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: I think this is sufficient to pass through.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct code and click on the button to open the door.`
     }
 
@@ -652,14 +651,21 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@randomFriend: What is this supposed to mean?`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
+      "text": `@name: I think somehow combining the top and the bottom rows might give us something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -754,7 +760,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@friend1: @name, I found something that might help.`
     },
 
@@ -782,14 +788,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: Decoding the cypher should tell us how to move forward.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
     }
 
@@ -944,14 +950,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@randomFriend: I can't understand what all this is supposed to mean.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -1033,14 +1039,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: We need a five digit number to open the door.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct key and click on the button to open the door.`
     }
 
@@ -1119,14 +1125,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: Each symbol represents a number. We need to decipher the symbols.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct code and click on the button to open the door.`
     }
 
@@ -1238,14 +1244,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: I think I know how to crack this.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -1350,14 +1356,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@randomFriend: This page must have the key behind the message.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -1452,7 +1458,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": `Suddenly, everything becomes clear to you. An idea comes to you that will help you crack the code.`
     },
 
@@ -1461,7 +1467,7 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "remove-bottom",
       "text": 
-        `@name: Everyone, search the newspaper. Look for any headline that says anything about a baby kidnapped or
+        `@name: Everyone, search the newspapers. Look for any headline that says anything about a baby kidnapped or
         rescued. The date of the newspaper will help us.`
     },
 
@@ -1475,7 +1481,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
+      "id": "",
       "text": `@friend2: I found something. Look here is the newspaper.`
     },
 
@@ -1511,14 +1517,14 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: I think these are the only clues that we have got.`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
     }
 
@@ -1593,16 +1599,144 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: The digital balance. That is the only place where we can enter a key`
     },
 
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct key and click on the button to open the door.`
     }
+  ],
+
+  "room-14": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You are confident that your answer was correct, and you hustle quickly through it. Having
+        lost so much time, being slow isn't an option. So, you move through the passage, enter the next room and
+        start searching for clues. First, you go and have a look at the door. You find a digital lock that needs a
+        password to open. On one of the walls, next to the door, you find a sticky note with the following message.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `1 CAR 2 PARROT 2 AMBULANCE 5 PHONE 4 TABLE = CAMEL`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: Is this another cipher?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Seems like it. Let's search for some clues to decipher it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: I found something. Come here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You look at the clue that @friend1 shows you. You find the following engraving on the wall.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The frog has icecube and chair as its neighbours.`,
+          `The door is at one of the extremes.`,
+          `Icecube is next to the door.`,
+          `The cat lies at the end.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Seems like some order.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Do you think it is sufficient to move us out of this room?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: I think we need something more.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: @name, come here. I found something relevant here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend4 shows you a picture stuck on the wall.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room14_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: I still can't figure out the meaning.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
   ],
 
   "repeated-room-4": [
@@ -1626,7 +1760,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `@name: Let's quickly have a relook at the clues and move out of this room.`
     },
 
@@ -1645,7 +1779,7 @@ const pageContent = {
 
     {
       "tag": "img",
-      "class": "col-8 col-md-6 mx-auto",
+      "class": "col-10 col-md-6 mx-auto",
       "id": "",
       "text": "",
       "file": "game_images/room4_img1.png"
@@ -1654,7 +1788,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct code and click on the button to open the door.`
     }
 
@@ -1695,7 +1829,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -1782,7 +1916,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password (single word answer in English script) and click on the button to open the door.`
     }
 
@@ -1872,7 +2006,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -1931,7 +2065,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct key and click on the button to open the door.`
     }
 
@@ -1981,7 +2115,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct code and click on the button to open the door.`
     }
 
@@ -2053,7 +2187,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -2139,7 +2273,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
 
@@ -2215,7 +2349,7 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
     }
 
@@ -2267,9 +2401,86 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "",
+      "id": "remove-bottom",
       "text": `Enter the correct key and click on the button to open the door.`
     }
+  ],
+
+  "repeated-room-14": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You and your friends move through the passage.  After a while, you enter another room,
+        and to your surprise, you find that you have visited it previously.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: I can't believe that we are here again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: This is really depressing. The time is running out. What do we do?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend2: We need to get past this room again. Let's look at the clues.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `1 CAR 2 PARROT 2 AMBULANCE 5 PHONE 4 TABLE = CAMEL`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The frog has icecube and chair as its neighbours.`,
+          `The door is at one of the extremes.`,
+          `Icecube is next to the door.`,
+          `The cat lies at the end.`
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-8 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room14_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
   ],
 
   "end-1": [

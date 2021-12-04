@@ -76,6 +76,14 @@ const verifyResults = (page, userInput) => {
         return "invalid"
       }
     }
+    else if (page === "room-15"){
+      if (userInput.length !== 4){
+        return "invalid"
+      }
+      if (userInput.match(/^[0-9]+$/) === null){
+        return "invalid"
+      }
+    }
   }
 
   if(userInput.toLowerCase() === correctAnswers[page]){

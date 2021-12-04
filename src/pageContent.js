@@ -1739,6 +1739,111 @@ const pageContent = {
 
   ],
 
+  "room-15": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into a passage. Should you be happy about this? You aren't sure. You know that
+        this passage could lead you into a trap and kill you. But you also have complete faith in the way you cracked
+        the code. So, there is a good chance that you will be safe. After walking a few steps, you start to see a room
+        in front of you. You pace up your walking as you can sense that you are safe. Moments later, you enter the room.
+        As usual, the door closes behind you. The room is a small one. It has a table in the middle of the room, with a
+        book placed on it. You move forward to check the door; while your friends look at the table and the book. You
+        find that the door is locked and requires a four-digit pin to open it. Above the lock, you find a small card
+        that reads the following.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `February + September + December`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Hey @name! Come here. We found something inside the book.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You move towards them, who hand you a few cards they found inside the book.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `January = 710`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `April = 51`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `November = 814`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `You show them the card you found near the door.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: I think it is straightforward now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct pin and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -2479,6 +2584,91 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
+  "repeated-room-15": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. You quickly walk through the passage. Moments later, you find yourself in a room you have
+        already visited before, again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: Not again, please. I am sick of this now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: @friend2, you can't lose hope so easily. We have to get out of this.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `February + September + December`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `January = 710`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `April = 51`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `November = 814`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct pin and click on the button to open the door.`
     }
 
   ],

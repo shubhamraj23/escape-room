@@ -701,7 +701,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "",
-      "text": `@friend2: Let's find any clues we can. And let's not waste any more time searching for papers only.`
+      "text": `@friend2: Let's find any clues we can. And let's not waste any more time searching only for papers.`
     },
 
     {
@@ -1844,6 +1844,156 @@ const pageContent = {
 
   ],
 
+  "room-16": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens and leads you into another passage. This time, you don't bother to think whether your
+        answer was correct or not. You have already lost a lot of time, and you aren't sure how long this will
+        continue. So, you quickly move through the passage. You enter the room and rush to have a look at the door.
+        As expected, the door is locked and needs a password to open.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: How many more rooms are there?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: This could well be the last one if we are not careful. Don't forget that we chose the deadlier way.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: Deadlier, but easier. So, we should be able to get out of here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Let's search for clues.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You search near the door. You have read the trend so far, and hence, you expect to find some clue near
+        the door. You found a metal plaque and a card near the door in the previous rooms, and you are hoping for
+        the trend to continue. And as you expected, you find a small wooden plank carefully hidden beneath the door.
+        You pull it out and look at it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `IEMNEX`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: What did you find @name?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: It seems like some cipher. Let's search for clues to decode it.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: I found a piece of paper that may be of some help.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You take the paper from @friend1 and see it.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The four corners of a rectangle.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: I am not sure what this is supposed to mean.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: Hey @name and @friend1, come here. We found something on the wall.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You move towards them to check the wall.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-9 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room16_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: This is finally starting to make some sense to me.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -2669,6 +2819,91 @@ const pageContent = {
       "class": `${textSize}`,
       "id": "remove-bottom",
       "text": `Enter the correct pin and click on the button to open the door.`
+    }
+
+  ],
+
+  "repeated-room-16": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens, and you quickly make your way through the passageway. You realise that you have lost a lot
+        of time circling through the already visited rooms. This time, hopefully, you will find a new one. But to
+        your disappointment, you find another room that you have entered before. You can believe your eyes. You start
+        thinking what has gone wrong, and where?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: We are circling the same rooms again and again.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: This is a trick.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text":
+        `@name: No. If you remember, the message on the board said that a correct answer will always lead us forward.
+        We have gone wrong, at least once before. But where?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend1: Let us give another it try here, and then see what happens.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `IEMNEX`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The four corners of a rectangle.`
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-9 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room16_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to open the door.`
     }
 
   ],

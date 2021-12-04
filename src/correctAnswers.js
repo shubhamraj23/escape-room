@@ -13,6 +13,7 @@ const correctAnswers = {
     "room-13": "22",
     "room-14": "digit",
     "room-15": "1089",
+    "room-16": "cactus",
 }
 
 export {correctAnswers}

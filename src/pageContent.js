@@ -2943,6 +2943,70 @@ const pageContent = {
 
   ],
 
+  "end-2": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You enter the pin, but the door doesn't open. You hear something moving above you near the ceiling. It
+        sounds as if a door is sliding open. Suddenly, some liquid with a strange smell falls from it. It pours
+        down on the table and almost soaks @friend2 and @friend4 completely in it. You identify the smell and
+        guess the liquid to be kerosene. Suddenly, you see a small flickering light dropping from the ceiling.
+        @friend3 realises the danger and immediately jumps towards them. However, it is too late. The kerosene
+        catches fire leading to an explosion that kills all three of them. In the aftermath of the explosion,
+        the whole place is surrounded by fire. You find that @friend1 has also caught fire, but is surrounded completely
+        by flames. There is nothing that you can do. All your friends have died, and you weren't able to do anything.
+        There is no way to escape this room. Soon, your clothes catch fire, and you know that you will be burnt
+        to death soon. As your await your death, you start thinking, should you have entered this house?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+  ],
+
+  "end-3": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You enter the password. The door doesn't open. Instead, you hear the sound of gases flowing into the room.
+        In a few moments, @friend1 and @friend4 fall on the ground. @friend2 and @friend3 rush towards them to find
+        out what happened. In an instant, both of them also fall to the ground. You can't figure out what is
+        happening. You notice a vent in the wall near where your friends are lying. You immediately conclude
+        that the gas is poisonous; and going anywhere near them might cause you to faint, even possibly kill you. 
+        There is no way to escape this room. Soon, the smell of the gases reaches your nose. You realise that you
+        will be dead soon and there is nothing that you can do. Finally accepting your fate, you sit down. As your
+        await your death, you start thinking, should you have entered this house in the first place?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+  ],
+
   "end-4": [
     {
       "tag": "p",

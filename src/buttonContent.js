@@ -20,6 +20,7 @@ const buttonContent = {
   "room-14": "Open",
   "room-15": "Open",
   "room-16": "Open",
+  "room-17": "Open",
 }
 
 const leftButtonContent = {
@@ -43,6 +44,7 @@ const inputContent = {
   "room-14": "Password",
   "room-15": "Pin",
   "room-16": "Password",
+  "room-17": "Name",
 }
 
 const noMessage = {
@@ -62,6 +64,7 @@ const noMessage = {
   "room-14": "Please enter a password",
   "room-15": "Please enter a pin",
   "room-16": "Please enter a password",
+  "room-17": "Please enter a name",
 }
 
 const errorMessage = {
@@ -75,6 +78,7 @@ const errorMessage = {
   "room-12": "Please enter a valid date in DDMMYYYY format.",
   "room-13": "Please enter a numeric key.",
   "room-15": "Please enter a 4 digit numeric pin.",
+  "room-17": "Please enter a valid name."
 }
 
 export {buttonContent, leftButtonContent, inputContent, errorMessage, noMessage};

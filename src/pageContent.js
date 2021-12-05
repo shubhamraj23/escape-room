@@ -659,7 +659,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@name: I think somehow combining the top and the bottom rows might give us something.`
+      "text": `@name: I think somehow combining the top and the bottom rows might give us a word.`
     },
 
     {
@@ -1994,6 +1994,259 @@ const pageContent = {
 
   ],
 
+  "room-17": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. To your surprise, there is no passage behind the door this time. But the door directly
+        leads you into another room. You step inside the massive room. You turn around to have a glance at the room.
+        You find a second door opposite the one you entered, which you assume is the exit. You find another door
+        right next to the one you entered through. You think that there might be another route which leads to this
+        room. The room is full of scrap. There is an old, rusty table in the middle of the room containing a few
+        newspapers. There are a couple of bookshelves lying in the corners of the room. Next to them is a large
+        trunk that might be containing something. You also find three bamboo ladders present in the room. There are
+        many shelves present in the room containing bottles and vases. You think you can reach the shelves by
+        climbing up the ladders. Just below the exit door is a big screen with the following message.`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `In the running street, who owns the Monkey?`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: What is this supposed to mean?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: No idea. But, at least we know what we need to answer this time.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Yes, but there is a lot to search here. It's a big room.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text":
+        `@friend2: Let's divide the work. @name, you look at the table and around it. Also, check the door. @friend1,
+        you search both the bookshelves. @friend4, you can have a look at the trunk. @friend3 and I will take the ladder
+        and search on the shelves.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Sounds like a good plan. If you find any clues, bring them to me at the table.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `First, you go and look at the door. The door needs a password, and you believe that the correct name would
+        serve as the password. You search around the door and find an extract from a newspaper. You read the headline.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `NO BETTER PLACE TO FIND DIVERSITY THAN IN RUNNING STREET`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You realise that this could be something that will set the context for you. You read through the
+        editorial to find some information that might help you.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Running street is a small lane that is located on the outskirts of the city. It boasts of a perfect
+          example of diversity. There are five houses located in this lane, owned by Thomas, Molly, James, Amelia
+          and Kevin. The five people are from five different professions. In addition, the five houses each have a
+          different colour, and each of the five people has a different pet.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `You have got a good idea of what you need to do. You rush back towards the table and scan through the
+        newspapers. You find a few newspaper clippings that might be relevant for you.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `DOG GOES MISSING FROM RUNNING STREET`,
+          `Mr James, who was the owner of the dog, said that his dog ran away from the house last night when he was sleeping.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `COMPLAINT AGAINST NEIGHBOUR IN RUNNING STREET`,
+          `Miss Molly, a resident of running street has filed a complaint against her neighbour. According to her, the people
+          repainting her neighbour's white walls are causing a lot of noise and disturbing her.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `INTERVIEW EXCERPTS FROM THE RUNNING STREET`,
+          `Mr Kevin: I am happy with the location of my red house. I have two neighbours to speak to any time I
+          want. You look at Mr Thomas, who owns the first house on the left. He can't do anything other than look
+          at the blue house to the right of his.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Hey @name! We found something in the bookshelves and trunk. Did you find anything?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Yeah, a lot of stuff. Have a look.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You look at the pieces of paper that @friend1 brought.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The resident of the blue house is tired of the hamsters and fox running into his house from the neighbouring houses.`
+        ]
+      }
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `The designers of the running street said that they had made the green coloured house to the right of white coloured house for a reason.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@friend2: Hey @name! We could only find this piece of paper.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `Miss Amelia lives in the house adjacent to the middle house.`,
+          `The person living in the house next to the yellow coloured house owns the horse.`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: There is a lot of information that we have now.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct name and click on the button to open the door.`
+    }
+
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -3102,6 +3355,39 @@ const pageContent = {
         hold on for long. You try to pull yourself up but are unable to do that. Finally accepting your fate,
         you let yourself go off the rock and start falling. As you await your death, you start thinking, should
         you have entered this house in the first place?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+
+  ],
+
+  "end-6": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You enter the password. But to your surprise, the door in front of you doesn't open. Instead, the door
+        behind you, next to the one through which you entered, opens. You all turn around to exit through the door.
+        Suddenly, a barrage of bullets fired from behind the door enter the room. @friend1 and @friend3 were
+        directly in the line of fire. Several bullets hit them and they die. Meanwhile, you and your remaining
+        friends quickly move far away from the line of fire to save yourself. You can't believe what is happening
+        in front of your eyes. While you were still grieving the deaths of your friends, the line of fire rotated,
+        and the bullets struck @friend2 and @friend4. They die immediately. Once again, the line of fire shifts
+        and you are hit by several bullets on your arm and chest. You collapse down on the ground. As you await
+        your death, you start thinking, should you have entered this house in the first place?`
     },
 
     {

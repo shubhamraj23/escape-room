@@ -44,7 +44,7 @@ const wrongAnswer = {
     "room-14": "end-5",
     "room-15": "end-2",
     "room-16": "end-3",
-    "room-17": "end-5"
+    "room-17": "end-6"
 }
 
 const backTraversal = {

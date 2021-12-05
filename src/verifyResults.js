@@ -5,6 +5,8 @@ const friends = ["Kaushik", "Ritik", "Vaibhav", "Divya", "Vibhuti", "Shubham",
     "Namrata", "Arpita", "Shambhavi", "Vaidehi", "Jaya", "Satyam", "Anand", "Rajiv", 
     "Abhishek", "Samyak", "Shreya", "Somil", "Priya", "Smriti"]
 
+const validNames = ["thomas", "amelia", "kevin", "james", "molly"]
+
 const setRepeat = (room) => {
   localStorage.setItem(room, 0)
 }
@@ -81,6 +83,11 @@ const verifyResults = (page, userInput) => {
         return "invalid"
       }
       if (userInput.match(/^[0-9]+$/) === null){
+        return "invalid"
+      }
+    }
+    else if (page === "room-17"){
+      if (!validNames.includes(userInput.toLowerCase())){
         return "invalid"
       }
     }

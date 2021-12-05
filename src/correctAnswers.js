@@ -14,6 +14,8 @@ const correctAnswers = {
     "room-14": "digit",
     "room-15": "1089",
     "room-16": "cactus",
+    "room-17": "molly",
+    "room-20": "olympics"
 }
 
 export {correctAnswers}

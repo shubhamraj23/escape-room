@@ -21,10 +21,12 @@ const buttonContent = {
   "room-15": "Open",
   "room-16": "Open",
   "room-17": "Open",
+  "room-18": "Go through the right door",
 }
 
 const leftButtonContent = {
   "room-3": "Choose the left route",
+  "room-18": "Go through the left door",
 }
 
 const inputContent = {

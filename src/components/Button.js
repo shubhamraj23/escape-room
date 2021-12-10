@@ -31,7 +31,7 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       return
     }
 
-    if (choicePages.includes(pageTitle)){
+    if (choicePages.includes(removeRepeat(pageTitle))){
       changeCorrectPage()
       return
     }

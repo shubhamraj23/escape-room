@@ -1357,7 +1357,7 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `@randomFriend: This page must have the key behind the message.`
+      "text": `@randomFriend: This page must contain the key behind the message.`
     },
 
     {
@@ -2142,9 +2142,30 @@ const pageContent = {
         "text": [
           `COMPLAINT AGAINST NEIGHBOUR IN RUNNING STREET`,
           `Miss Molly, a resident of running street has filed a complaint against her neighbour. According to her, the people
-          repainting her neighbour's white walls are causing a lot of noise and disturbing her.`
+          renovating her neighbour's white house are causing a lot of noise and disturbing her.`
         ]
       }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: Hey @name! We found a relevant newspaper in the trunk. Did you find anything?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Yeah, a lot of stuff. Have a look.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You look at the newspaper that @friend1 brought. The headline strikes you.`
     },
 
     {
@@ -2166,53 +2187,6 @@ const pageContent = {
     {
       "tag": "p",
       "class": `${textSize}`,
-      "id": "remove-bottom",
-      "text": `@friend1: Hey @name! We found something in the bookshelves and trunk. Did you find anything?`
-    },
-
-    {
-      "tag": "p",
-      "class": `${textSize}`,
-      "id": "remove-bottom",
-      "text": `@name: Yeah, a lot of stuff. Have a look.`
-    },
-
-    {
-      "tag": "p",
-      "class": `${textSize}`,
-      "id": "",
-      "text": `You look at the pieces of paper that @friend1 brought.`
-    },
-
-    {
-      "tag": "div",
-      "class": `riddle my-2 ${textSize}`,
-      "id": "",
-      "text": {
-        "class": "riddle-text",
-        "id": "remove-bottom",
-        "text": [
-          `The resident of the blue house is tired of the hamsters and fox running into his house from the neighbouring houses.`
-        ]
-      }
-    },
-
-    {
-      "tag": "div",
-      "class": `riddle my-2 ${textSize}`,
-      "id": "",
-      "text": {
-        "class": "riddle-text",
-        "id": "remove-bottom",
-        "text": [
-          `The designers of the running street said that they had made the green coloured house to the right of white coloured house for a reason.`
-        ]
-      }
-    },
-
-    {
-      "tag": "p",
-      "class": `${textSize}`,
       "id": "",
       "text": `@friend2: Hey @name! We could only find this piece of paper.`
     },
@@ -2225,8 +2199,10 @@ const pageContent = {
         "class": "riddle-text",
         "id": "remove-bottom",
         "text": [
+          `The people owning hamsters and fox live adjacent to the blue coloured house.`,
           `Miss Amelia lives in the house adjacent to the middle house.`,
-          `The person living in the house next to the yellow coloured house owns the horse.`
+          `The person living in the house next to the yellow coloured house owns the horse.`,
+          `The green coloured house is immediately to the right of white coloured house.`
         ]
       }
     },
@@ -2245,6 +2221,122 @@ const pageContent = {
       "text": `Enter the correct name and click on the button to open the door.`
     }
 
+  ],
+
+  "room-18": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens. Realizing that little time is left; and the fact that you are still unsure of how many
+        more rooms you would have to encounter, you quickly hustle into the next room. You find that there is no
+        passage behind the door. Instead, it leads you directly into the next room. It gives you a sense of security.
+        You enter the room, and the door closes behind you. As soon as the door closes, a giant screen in front of you
+        flashes the following.`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `I have to admit that you have done exceptionally well to come here. Now, you face your final frontier.
+          Three rooms, four clues and one password will lead you out of this house. You can move back and forth
+          between these three rooms whenever you want. I'm rewarding you for your success so far by giving you
+          multiple attempts this time. An incorrect password will simply not open the door. But the timer is not
+          going to stop. Will you be able to escape before the bomb blasts? Only time will tell. `
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Reading this message, you all erupt in joy.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Calm down guys. We need to do the same thing, just one more time.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: Let's examine this room quickly before we move on to the next room.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `The room has two exit doors, both adjacent to each other. Several cartons are present near both of the
+        exit doors. A vase rests on top of a table in the middle of the room. You search near the table, while your
+        friends search near the cartons. First, you look inside the vase, expecting to find something inside it.
+        Unfortunately, you find nothing. You look at the surface of the vase and the table to check if anything is
+        engraved on it. But to your disappointment, there is nothing. You then look below the table. You find a
+        folded piece of paper that's been carefully placed under one of its legs. You unfold it and read.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room18_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Hey, we found a similar paper near the cartons.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You take the paper and read it.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room18_img2.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Is there anything else in this room?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: I don't think so.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Then, let's move to one of the remaining rooms.`
+    },
   ],
 
   "repeated-room-4": [
@@ -3158,6 +3250,51 @@ const pageContent = {
       "id": "remove-bottom",
       "text": `Enter the correct password and click on the button to open the door.`
     }
+
+  ],
+
+  "repeated-room-18": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You go back to the previous room to look at the clues again. First, you look at the message on the screen,
+        and then you look at the clues.`
+    },
+
+    {
+      "tag": "div",
+      "class": `screen my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "screen-text",
+        "id": "remove-bottom",
+        "text": [
+          `I have to admit that you have done exceptionally well to come here. Now, you face your final frontier.
+          Three rooms, four clues and one password will lead you out of this house. You can move back and forth
+          between these three rooms whenever you want. I'm rewarding you for your success so far by giving you
+          multiple attempts this time. An incorrect password will simply not open the door. But the timer is not
+          going to stop. Will you be able to escape before the bomb blasts? Only time will tell. `
+        ]
+      }
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room18_img1.png"
+    },
+
+    {
+      "tag": "img",
+      "class": "col-12 col-md-10 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room18_img2.png"
+    },
 
   ],
 

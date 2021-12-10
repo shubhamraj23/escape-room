@@ -80,7 +80,7 @@ const Page = ({updateApp, pageBackground}) => {
   }
 
   const changeBottom = () => {
-    if (noBottom.includes(pageTitle)){
+    if (noBottom.includes(removeRepeat(pageTitle))){
       updateBottom("remove")
     }
     else{
@@ -89,9 +89,9 @@ const Page = ({updateApp, pageBackground}) => {
   }
 
   const changeInput = () => {
-    if (noInput.includes(pageTitle)){
+    if (noInput.includes(removeRepeat(pageTitle))){
       changeBox("remove")
-      if (choicePages.includes(pageTitle)){
+      if (choicePages.includes(removeRepeat(pageTitle))){
         changeWidth("6")
         updateLeftButton("")
       }
@@ -108,7 +108,7 @@ const Page = ({updateApp, pageBackground}) => {
   }
 
   const changeBack = () => {
-    if (backButton.includes(pageTitle)){
+    if (backButton.includes(removeRepeat(pageTitle))){
       updateBack("d-block")
     }
     else{

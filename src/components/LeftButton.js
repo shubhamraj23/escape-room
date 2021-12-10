@@ -28,6 +28,13 @@ const LeftButton = ({page, informLeftButton}) => {
     }, 4000)
   }
 
+  const removeRepeat = (page) => {
+    if (page.includes("repeated")){
+      return page.replace("repeated-", "")
+    }
+    return page
+  }
+
   return (
     <div>
       <button className={`button mx-auto`}
@@ -38,7 +45,7 @@ const LeftButton = ({page, informLeftButton}) => {
         onClick={navigatePage}
       >
         <h1 className={`button-text ${textVisible}`}>
-          {leftButtonContent[page]}
+          {leftButtonContent[removeRepeat(page)]}
         </h1>
       </button>
     </div>

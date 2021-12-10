@@ -3723,6 +3723,65 @@ const pageContent = {
       "text": `Refresh the page to restart the game.`
     }
 
+  ],
+
+  "winner": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `The door opens, and you all erupt in joy. Rushing through the door, you try to get as far away from the
+        building as possible. You cannot believe that you managed to pass through this dangerous house unscathed.
+        You hug each other in ecstasy. You gather your friends together and would like to share a few words with
+        them.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text":
+        `@name: I want to thank all of you from the bottom of my heart. We wouldn't have been able to escape
+        without any injuries if it wasn't for our teamwork.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@randomFriend: Let's not forget that you were the one who solved most of the puzzles.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text":
+        `@name: Well, I had to. It was me who got you all in trouble in the first place. And I promise I
+        won't enter any haunted house ever in my life.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@randomFriend: All is well that ends well.`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `YOU WIN`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game and try the other path at the diversion`
+    }
   ]
 
 }

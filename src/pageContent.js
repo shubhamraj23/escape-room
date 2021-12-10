@@ -642,7 +642,7 @@ const pageContent = {
 
     {
       "tag": "img",
-      "class": "col-8 col-md-6 mx-auto",
+      "class": "col-10 col-md-6 mx-auto",
       "id": "",
       "text": "",
       "file": "game_images/room5_img1.png"
@@ -2339,6 +2339,137 @@ const pageContent = {
     },
   ],
 
+  "room-19": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You try to open the left door and find that it is unlocked. So, you quickly move through it and enter the
+        room on the left. The door doesn't shut behind you, which indicates that you can freely move back and forth
+        between the rooms. You scan through the room and find only one door present, the one through which you entered.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend4: There is no exit door here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: The only way out of this house seems to be on the other side.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `@name: That doesn't mean there will be no clues here. Let's search quickly.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": 
+        `The room doesn't have any objects or furniture. So, you are sure that if there are any clues in the room,
+        they will be engraved on the wall. You look at the walls thoroughly but are unable to find anything.
+        Suddenly you hear @friend1's voice.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend1: We had been searching in the wrong place so far. The clue is not on the walls, but the floor. Come here.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You go there and look at the clue.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `CLUE 2`,
+          `The colours of the rainbow: 726`
+        ]
+      }
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend2: I think there are no more clues in this room. Let's go back.`
+    },
+
+  ],
+
+  "room-20": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `There is no lock on the right door when you try opening it. Therefore, you quickly pass through it and
+        enter the room on the right. You are free to move from room to room since the door doesn't shut behind you.
+        Finally, you start trusting the words written on the giant screen. You thought that it could have been a trick,
+        but it wasn't to be. But you know that you still need to stay alert. Keeping that in mind, you start examining
+        the room. There is a giant exit door in front of you. Maybe it's the one that will lead you out of the house.
+        Without wasting any time thinking about anything, you go and examine the door. The door is locked and needs a
+        password to open. You search near the door but find nothing. But your friend @friend3 found something.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@friend3: Come here. I found a piece of paper.`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "",
+      "text": `You go there to look at the clue.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room20_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `@name: Do we have everything we need to crack the password. Or shall we go back and check the clues?`
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to exit the building.`
+    }
+  ],
+
   "repeated-room-4": [
     {
       "tag": "p",
@@ -2420,7 +2551,7 @@ const pageContent = {
 
     {
       "tag": "img",
-      "class": "col-8 col-md-6 mx-auto",
+      "class": "col-10 col-md-6 mx-auto",
       "id": "",
       "text": "",
       "file": "game_images/room5_img1.png"
@@ -3296,6 +3427,57 @@ const pageContent = {
       "file": "game_images/room18_img2.png"
     },
 
+  ],
+
+  "repeated-room-19": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You go through the left door again to look at the only piece of clue you found in that room.`
+    },
+
+    {
+      "tag": "div",
+      "class": `riddle my-2 ${textSize}`,
+      "id": "",
+      "text": {
+        "class": "riddle-text",
+        "id": "remove-bottom",
+        "text": [
+          `CLUE 2`,
+          `The colours of the rainbow: 726`
+        ]
+      }
+    },
+
+  ],
+
+  "repeated-room-20": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You go through the right door again and look at the clue you found in that room. You need to decide if
+        you know everything to crack the password, or you need another look at the clues.`
+    },
+
+    {
+      "tag": "img",
+      "class": "col-10 col-md-6 mx-auto",
+      "id": "",
+      "text": "",
+      "file": "game_images/room20_img1.png"
+    },
+
+    {
+      "tag": "p",
+      "class": `${textSize}`,
+      "id": "remove-bottom",
+      "text": `Enter the correct password and click on the button to exit the building.`
+    }
   ],
 
   "end-1": [

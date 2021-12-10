@@ -1,5 +1,5 @@
 const correctAnswer = {
-    "home-page": "welcome",
+    "home-page": "room-20",
     "welcome": "instructions",
     "instructions": "scenario",
     "scenario": "the-adventure-begins",

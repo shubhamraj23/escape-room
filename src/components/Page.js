@@ -33,6 +33,7 @@ const Page = ({updateApp, pageBackground}) => {
   const [leftButton, updateLeftButton] = useState("remove")
   const [leftPress, informLeftButton] = useState(false)
   const [bottomBar, updateBottom] = useState("")
+  const [timerOut, informTimer] = useState(false)
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -152,7 +153,7 @@ const Page = ({updateApp, pageBackground}) => {
             </div>
 
             <div className="col-4 my-auto">
-              <Timer start={header} />
+              <Timer start={header} informTimer={informTimer}/>
             </div>
 
             <div className="col-4 my-auto">
@@ -211,6 +212,7 @@ const Page = ({updateApp, pageBackground}) => {
                   updateError={updateError} updateMissing={updateMissing}
                   backStatus={backPress} informButton={informButton}
                   leftStatus={leftPress} informLeftButton={informLeftButton}
+                  timerOut={timerOut}
                 />
               </div>
             </div>

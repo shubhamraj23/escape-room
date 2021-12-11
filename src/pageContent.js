@@ -3725,6 +3725,40 @@ const pageContent = {
 
   ],
 
+  "time-end": [
+    {
+      "tag": "p",
+      "class": `${textSize} first-content`,
+      "id": "",
+      "text": 
+        `You are busy figuring out the reasoning behind all the clues. All of a sudden, you start hearing
+        destructive sounds. You look at your watch and realize that the timer has gone out. You can feel the sound
+        coming closer. An explosion far away has set off a series of explosions, which are closing in on you by the
+        minute. Immediately, you scream and ask your friends to try to exit as quickly as you can. You try bursting
+        through the exit door, trying different passcodes, but the door doesn't open. You try opening the door
+        through which you entered, but that doesn't work too. You realize that you are trapped. The sound of
+        explosions is coming closer to you. Suddenly, the bomb explodes in your room, and there is destruction. The
+        explosion kills all your friends. You survive the explosion, but the roof is collapsing. You know that it is
+        a matter of time before debris hits you on your head and you die. As you await your death, you start
+        thinking, should you have entered this house in the first place?`
+    },
+
+    {
+      "tag": "h2",
+      "class": "",
+      "id": "",
+      "text": `GAME OVER`
+    },
+
+    {
+      "tag": "h6",
+      "class": "",
+      "id": "",
+      "text": `Refresh the page to restart the game.`
+    }
+
+  ],
+
   "winner": [
     {
       "tag": "p",

@@ -12,7 +12,8 @@ const setRepeat = (room) => {
 }
 
 const generateNames = (text) => {
-  const name = text.charAt(0).toUpperCase() + text.slice(1)
+  const firstName = text.split(" ")[0]
+  const name = firstName.charAt(0).toUpperCase() + firstName.slice(1)
   let teammates = []
 
   if (friends.includes(name)){

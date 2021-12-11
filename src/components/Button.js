@@ -5,7 +5,7 @@ import {correctAnswer, wrongAnswer, backTraversal, leftButtonTraversal} from "..
 import {verifyResults} from "../verifyResults"
 import {startPages, wrongSame, choicePages, repeatPages} from "../componentStatus"
 
-const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton, leftStatus, informLeftButton}) => {
+const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, backStatus, informButton, leftStatus, informLeftButton, timerOut}) => {
   const [pageTitle, updateButton] = useState("home-page")
   const [textVisible, textVisibility] = useState("")
   const [disabled, changeClick] = useState(false)
@@ -24,6 +24,15 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       leftPage()
     }
   }, [leftStatus])
+
+  useEffect(() => {
+    if (timerOut === true){
+      const page = "time-end"
+      updateApp(page)
+      updatePage(page)
+      changeButton(page)
+    }
+  }, [timerOut])
 
   const navigatePage = () => {
     if (startPages.includes(pageTitle)){

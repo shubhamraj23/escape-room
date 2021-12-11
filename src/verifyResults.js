@@ -1,5 +1,6 @@
 import {correctAnswers} from "./correctAnswers"
 import {validateAnswer, repeatPages} from "./componentStatus"
+import {cipher} from "./cipher"
 
 const friends = ["Kaushik", "Ritik", "Vaibhav", "Divya", "Vibhuti", "Shubham", 
     "Namrata", "Arpita", "Shambhavi", "Vaidehi", "Jaya", "Satyam", "Anand", "Rajiv", 
@@ -94,7 +95,7 @@ const verifyResults = (page, userInput) => {
     }
   }
 
-  if(userInput.toLowerCase() === correctAnswers[page]){
+  if(cipher(userInput.toLowerCase()) === correctAnswers[page]){
     return "correct"
   }
   else{

@@ -19,6 +19,7 @@ const LeftButton = ({page, informLeftButton}) => {
     textVisibility("hide")
     changeClick(true)
     changeCursor("auto")
+    window.scrollTo(0, 0)
     setTimeout(() => {
       textVisibility("show")
     }, 2000)

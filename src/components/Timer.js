@@ -9,13 +9,11 @@ const Timer = ({start, informTimer}) => {
       let delay = 1000
       const timerOn = setTimeout(() => {
         const a = new Date()
-        console.log(a.getMinutes(), a.getSeconds(), a.getMilliseconds())
         const currentTime = new Date().getTime()
         const timeGap = currentTime - startTime
         delay = Math.max(2000 - timeGap, 0)
         changeTime(runningTime-1)
         startTime = currentTime
-        console.log(delay)
       }, delay)
       return () => clearTimeout(timerOn)
     }

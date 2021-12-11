@@ -3807,7 +3807,7 @@ const pageContent = {
       "tag": "h2",
       "class": "",
       "id": "",
-      "text": `YOU WIN`
+      "text": `YOU SURVIVE`
     },
 
     {

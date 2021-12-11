@@ -131,6 +131,9 @@ const Button = ({textInput, updateApp, updatePage, updateError, updateMissing, b
       updateButton(page)
     }, 2500)
     setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 2500)
+    setTimeout(() => {
       textVisibility("show")
     }, 4500)
     setTimeout(() => {

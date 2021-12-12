@@ -13,7 +13,7 @@ Welcome to *The Lost City of Alexandra*. This project simulates a virtual escape
   - Several other supporting JS and CSS files are also present in the folder.
 
 ## Credits
-I do not own the background images or soundtracks used in this application. Only the content provided under the Creative Commons license has been taken. The sources of the images and soundtracks are mentioned below. **No copyright infringement intended.**
+I do not own the background images or soundtracks used in this application. Only the content provided under the Creative Commons license and the content which is free for non-commerical purpose has been taken. The sources of the images and soundtracks are mentioned below. **No copyright infringement intended.**
 
 ### Images
 - [The Conversation](https://theconversation.com/evolutionary-psychology-explains-why-haunted-houses-creep-us-out-48209)

@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {homeImages, scenarioImages, diversionImages} from '../componentStatus'
+import {homeImages, scenarioImages, diversionImages, homeMusic, gameMusic, followMusic} from '../componentStatus'
 
 import home_landscape from '../images/landscape-image.jpg'
 import home_portrait from '../images/portrait-image.jpg'
@@ -7,7 +7,10 @@ import scenario_landscape from '../images/scenario-landscape.jpg'
 import scenario_portrait from '../images/scenario-portrait.jpg'
 import diversion_landscape from '../images/diversion-landscape.jpg'
 import diversion_portrait from '../images/diversion-portrait.jpg'
-import audio from '../soundtracks/home_sound.mp3'
+
+import home_music from '../soundtracks/home_sound.mp3'
+import game_music from '../soundtracks/game_play.mp3'
+import follow_music from '../soundtracks/follow_music.mp3'
 
 const checkBackground = () => {
   if (window.innerWidth > window.innerHeight){
@@ -20,9 +23,17 @@ const checkBackground = () => {
 
 const Background = ({page, soundState, changeBackground}) => {
   const [background, updateBackground] = useState(checkBackground())
+  const [audio, updateAudio] = useState("")
+
+  const removeRepeat = (page) => {
+    if (page.includes("repeated")){
+      return page.replace("repeated-", "")
+    }
+    return page
+  }
 
   useEffect(() => {
-    if (scenarioImages.includes(page)){
+    if (scenarioImages.includes(removeRepeat(page))){
       if (window.innerWidth > window.innerHeight){
         setTimeout(() => {
           updateBackground(scenario_landscape)
@@ -36,7 +47,7 @@ const Background = ({page, soundState, changeBackground}) => {
         }, 2500)
       }
     }
-    else if (diversionImages.includes(page)){
+    else if (diversionImages.includes(removeRepeat(page))){
       if (window.innerWidth > window.innerHeight){
         setTimeout(() => {
           updateBackground(diversion_landscape)
@@ -50,7 +61,7 @@ const Background = ({page, soundState, changeBackground}) => {
         }, 2500)
       }
     }
-    else if (homeImages.includes(page)){
+    else if (homeImages.includes(removeRepeat(page))){
       if (window.innerWidth > window.innerHeight){
         setTimeout(() => {
           updateBackground(home_landscape)
@@ -63,6 +74,16 @@ const Background = ({page, soundState, changeBackground}) => {
           changeBackground(home_portrait)
         }, 2500)
       }
+    }
+
+    if (homeMusic.includes(removeRepeat(page))){
+      updateAudio(home_music)
+    }
+    else if (gameMusic.includes(removeRepeat(page))){
+      updateAudio(game_music)
+    }
+    else if (followMusic.includes(removeRepeat(page))){
+      updateAudio(follow_music)
     }
   }, [page])
 

@@ -1,28 +1,19 @@
 import {useState, useEffect} from 'react'
 import {homeImages, scenarioImages, diversionImages, homeMusic, gameMusic, followMusic} from '../componentStatus'
 
-import home_landscape from '../images/landscape-image.jpg'
-import home_portrait from '../images/portrait-image.jpg'
-import scenario_landscape from '../images/scenario-landscape.jpg'
-import scenario_portrait from '../images/scenario-portrait.jpg'
-import diversion_landscape from '../images/diversion-landscape.jpg'
-import diversion_portrait from '../images/diversion-portrait.jpg'
+import home_landscape from './bg_images/landscape-image.jpg'
+import home_portrait from './bg_images/portrait-image.jpg'
+import scenario_landscape from './bg_images/scenario-landscape.jpg'
+import scenario_portrait from './bg_images/scenario-portrait.jpg'
+import diversion_landscape from './bg_images/diversion-landscape.jpg'
+import diversion_portrait from './bg_images/diversion-portrait.jpg'
 
 import home_music from '../soundtracks/home_sound.mp3'
 import game_music from '../soundtracks/game_play.mp3'
 import follow_music from '../soundtracks/follow_music.mp3'
 
-const checkBackground = () => {
-  if (window.innerWidth > window.innerHeight){
-    return home_landscape
-  }
-  else{
-    return home_portrait
-  }
-}
-
 const Background = ({page, soundState, changeBackground}) => {
-  const [background, updateBackground] = useState(checkBackground())
+  const [background, updateBackground] = useState((window.innerWidth > window.innerHeight) ? home_landscape : home_portrait)
   const [audio, updateAudio] = useState("")
 
   const removeRepeat = (page) => {

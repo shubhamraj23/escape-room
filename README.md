@@ -4,7 +4,7 @@
 Welcome to *The Lost City of Alexandra*. This project simulates a virtual escape room present in a hypothetical, abandoned city of the ancient world. In this game, the main character and his/her friends try to escape from a haunted house. There are various rooms, each containing numerous clues and one correct code to exit the room safely. The characters navigate their way out of the haunted house by navigating through these rooms. The entire project has been created using React.
 
 ## Repository Structure
-- The ***docs*** folder contains the build files used to deploy the React application.
+The main branch contains the app's source code, and the gh-pages branch contains a built version of the app. The following folders are present in the main branch.
 - The ***public*** folder contains the base HTML file and puzzle images used in different rooms.
 - The ***src*** folder contains the main code behind the application.
   - The ***components*** folder contains all the React components used to develop the application.

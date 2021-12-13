@@ -49,11 +49,10 @@ ul{
   padding: 5%;
 }
 
-.background-image{
+.bg-image{
   background-size: cover;
   height: 100vh;
   left: 0;
-  opacity: 85%;
   position: fixed;
   top: 0;
   width: 100vw;

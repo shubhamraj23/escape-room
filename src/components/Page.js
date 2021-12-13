@@ -13,7 +13,7 @@ import {parser} from '../parser'
 import {rollPages, noInput, noHeader, backButton, choicePages, noBottom} from "../componentStatus"
 
 import roll from '../images/parchment-paper.png'
-import paper from '../images/parchment-paper.jpg'
+import paper from '../images/square-paper.jpg'
 
 const Page = ({updateApp, pageBackground}) => {
   const [pageTitle, update] = useState("home-page")

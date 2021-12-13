@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react'
 import {homeImages, scenarioImages, diversionImages, homeMusic, gameMusic, followMusic} from '../componentStatus'
 
-import home_landscape from './bg_images/landscape-image.jpg'
-import home_portrait from './bg_images/portrait-image.jpg'
-import scenario_landscape from './bg_images/scenario-landscape.jpg'
-import scenario_portrait from './bg_images/scenario-portrait.jpg'
-import diversion_landscape from './bg_images/diversion-landscape.jpg'
-import diversion_portrait from './bg_images/diversion-portrait.jpg'
+import home_landscape from '../images/landscape-image.jpg'
+import home_portrait from '../images/portrait-image.jpg'
+import scenario_landscape from '../images/scenario-landscape.jpg'
+import scenario_portrait from '../images/scenario-portrait.jpg'
+import diversion_landscape from '../images/diversion-landscape.jpg'
+import diversion_portrait from '../images/diversion-portrait.jpg'
 
 import home_music from '../soundtracks/home_sound.mp3'
 import game_music from '../soundtracks/game_play.mp3'
@@ -80,8 +80,7 @@ const Background = ({page, soundState, changeBackground}) => {
 
   const tags = [
     <div
-      key="1"
-      className="background-image"
+      className="bg-image"
       style={
         {
           backgroundImage: `url(${background})`,
@@ -92,7 +91,7 @@ const Background = ({page, soundState, changeBackground}) => {
 
   if (page !== "home-page"){
     tags.push(
-      <audio key="2" src={audio} type="audio/mp3" autoPlay loop muted={!soundState}>
+      <audio src={audio} type="audio/mp3" autoPlay loop muted={!soundState}>
       </audio>
     )
   }

@@ -4,7 +4,8 @@ import {cipher} from "./cipher"
 
 const friends = ["Kaushik", "Ritik", "Vaibhav", "Divya", "Vibhuti", "Shubham", 
     "Namrata", "Arpita", "Shambhavi", "Vaidehi", "Jaya", "Satyam", "Anand", "Rajiv", 
-    "Abhishek", "Samyak", "Shreya", "Somil", "Priya", "Smriti"]
+    "Abhishek", "Samyak", "Shreya", "Somil", "Priya", "Smriti", "Aman", "Prakhar",
+    "Ritik", "Rajat", "Shourya", "Anubhav", "Manish"]
 
 const validNames = ["thomas", "amelia", "kevin", "james", "molly"]
 
@@ -14,7 +15,7 @@ const setRepeat = (room) => {
 
 const generateNames = (text) => {
   const firstName = text.split(" ")[0]
-  const name = firstName.charAt(0).toUpperCase() + firstName.slice(1)
+  const name = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase()
   let teammates = []
 
   if (friends.includes(name)){

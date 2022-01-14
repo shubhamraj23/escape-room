@@ -1525,7 +1525,9 @@ const pageContent = {
       "tag": "p",
       "class": `${textSize}`,
       "id": "remove-bottom",
-      "text": `Enter the date in DDMMYYYY format and click on the button to open the door.`
+      "text":
+        `Enter the date in DDMMYYYY format and click on the button to open the door. Please consider only the
+        clues presented and do not consider the days from the actual dates.`
     }
 
   ],
